@@ -2,101 +2,280 @@ site_name: DJI 上云 API 文档
 site_description: DJI Cloud API 文档离线镜像（中文），基于官方最新版本构建，便于 AI 读取与开发者离线查阅。
 site_author: Community
 site_url: https://huneng-dev.github.io/dji-cloud-api-docs/
-
 repo_name: dji-cloud-api-docs
 repo_url: https://github.com/huneng-dev/dji-cloud-api-docs
-
-# 使用爬取得到的 output/ 目录作为文档源
 docs_dir: output
-
-# 构建输出目录（本地预览/构建用，GitHub Pages 部署时 mkdocs gh-deploy 会用到）
 site_dir: site
-
 theme:
   name: material
   language: zh
   palette:
-    # 默认暗色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: 切换到亮色模式
-    # 亮色模式
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: 切换到暗色模式
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: 切换到亮色模式
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: 切换到暗色模式
   features:
-    - navigation.instant          # 页面即时加载
-    - navigation.tracking         # URL 跟随滚动
-    - navigation.sections         # 章节展开
-    - navigation.expand           # 默认展开侧边栏
-    - navigation.indexes          # 章节索引页
-    - navigation.path             # 面包屑导航
-    - toc.follow                  # 右侧目录跟随滚动
-    - toc.integrate               # 小屏时目录并入侧边栏
-    - search.suggest              # 搜索建议
-    - search.highlight            # 搜索结果高亮
-    - search.share                # 分享搜索结果
-    - content.code.copy           # 代码块复制按钮
-    - content.code.annotate       # 代码注释
-    - content.tabs.link           # 标签页联动
-
+  - navigation.instant
+  - navigation.tracking
+  - navigation.sections
+  - navigation.expand
+  - navigation.indexes
+  - navigation.path
+  - toc.follow
+  - toc.integrate
+  - search.suggest
+  - search.highlight
+  - search.share
+  - content.code.copy
+  - content.code.annotate
+  - content.tabs.link
 plugins:
-  - search:
-      lang:
-        - zh
-        - en
-      separator: '[\s\u200b\-、。，.?!;:"()]+'
-
+- search:
+    lang:
+    - zh
+    - en
+    separator: '[\s\u200b\-、。，.?!;:"()]+'
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/huneng-dev/dji-cloud-api-docs
+  - icon: fontawesome/brands/github
+    link: https://github.com/huneng-dev/dji-cloud-api-docs
   generator: false
+copyright: '本站点为 DJI 上云 API 官方文档的社区镜像，仅供学习与交流使用。<br>
 
-copyright: |
-  本站点为 DJI 上云 API 官方文档的社区镜像，仅供学习与交流使用。<br>
   内容版权归 DJI 大疆创新所有，如有侵权请联系删除。
 
+  '
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-      toc_depth: 4
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+- abbr
+- admonition
+- attr_list
+- def_list
+- footnotes
+- md_in_html
+- toc:
+    permalink: true
+    toc_depth: 4
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret
+- pymdownx.details
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+nav:
+- 版本发布记录: index.md
+- API 参考:
+  - DJI WPML:
+    - 共用元素信息: api-reference/dji-wpml/common-element.md
+    - 总体介绍: api-reference/dji-wpml/overview.md
+    - template.kml 说明: api-reference/dji-wpml/template-kml.md
+    - waylines.wpml 说明: api-reference/dji-wpml/waylines-wpml.md
+  - 机场上云:
+    - MQTT:
+      - 飞行器:
+        - M30/M30T 设备属性: api-reference/dock-to-cloud/mqtt/aircraft/m30-properties.md
+        - M3D/M3TD 设备属性: api-reference/dock-to-cloud/mqtt/aircraft/m3d-properties.md
+        - M4D/M4TD 设备属性: api-reference/dock-to-cloud/mqtt/aircraft/m4d-properties.md
+        - 飞行器设备属性更新：增加 RID 工作状态、国家区域码: api-reference/dock-to-cloud/mqtt/aircraft/properties.md
+      - 机场:
+        - 大疆机场 1:
+          - AirSense: api-reference/dock-to-cloud/mqtt/dock/dock1/airsense.md
+          - 远程调试: api-reference/dock-to-cloud/mqtt/dock/dock1/cmd.md
+          - 配置更新: api-reference/dock-to-cloud/mqtt/dock/dock1/config.md
+          - 自定义飞行区: api-reference/dock-to-cloud/mqtt/dock/dock1/custom-flight-area.md
+          - 设备管理: api-reference/dock-to-cloud/mqtt/dock/dock1/device.md
+          - 指令飞行: api-reference/dock-to-cloud/mqtt/dock/dock1/drc.md
+          - ESDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/dock1/esdk-transmit-custom-data.md
+          - 媒体管理: api-reference/dock-to-cloud/mqtt/dock/dock1/file.md
+          - 固件升级: api-reference/dock-to-cloud/mqtt/dock/dock1/firmware.md
+          - 远程解禁: api-reference/dock-to-cloud/mqtt/dock/dock1/flysafe.md
+          - HMS 管理: api-reference/dock-to-cloud/mqtt/dock/dock1/hms.md
+          - 直播功能: api-reference/dock-to-cloud/mqtt/dock/dock1/live.md
+          - 远程日志: api-reference/dock-to-cloud/mqtt/dock/dock1/log.md
+          - 组织管理: api-reference/dock-to-cloud/mqtt/dock/dock1/organization.md
+          - 设备属性: api-reference/dock-to-cloud/mqtt/dock/dock1/properties.md
+          - PSDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/dock1/psdk-transmit-custom-data.md
+          - PSDK 功能: api-reference/dock-to-cloud/mqtt/dock/dock1/psdk.md
+          - 航线管理: api-reference/dock-to-cloud/mqtt/dock/dock1/wayline.md
+        - 大疆机场 2:
+          - AirSense: api-reference/dock-to-cloud/mqtt/dock/dock2/airsense.md
+          - 远程调试: api-reference/dock-to-cloud/mqtt/dock/dock2/cmd.md
+          - 配置更新: api-reference/dock-to-cloud/mqtt/dock/dock2/config.md
+          - 自定义飞行区: api-reference/dock-to-cloud/mqtt/dock/dock2/custom-flight-area.md
+          - 设备管理: api-reference/dock-to-cloud/mqtt/dock/dock2/device.md
+          - 指令飞行: api-reference/dock-to-cloud/mqtt/dock/dock2/drc.md
+          - ESDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/dock2/esdk-transmit-custom-data.md
+          - 媒体管理: api-reference/dock-to-cloud/mqtt/dock/dock2/file.md
+          - 固件升级: api-reference/dock-to-cloud/mqtt/dock/dock2/firmware.md
+          - 远程解禁: api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe.md
+          - HMS 管理: api-reference/dock-to-cloud/mqtt/dock/dock2/hms.md
+          - 直播功能: api-reference/dock-to-cloud/mqtt/dock/dock2/live.md
+          - 远程日志: api-reference/dock-to-cloud/mqtt/dock/dock2/log.md
+          - 组织管理: api-reference/dock-to-cloud/mqtt/dock/dock2/organization.md
+          - 设备属性: api-reference/dock-to-cloud/mqtt/dock/dock2/properties.md
+          - PSDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/dock2/psdk-transmit-custom-data.md
+          - PSDK 功能: api-reference/dock-to-cloud/mqtt/dock/dock2/psdk.md
+          - 远程控制: api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control.md
+          - 航线管理: api-reference/dock-to-cloud/mqtt/dock/dock2/wayline.md
+        - 大疆机场 3:
+          - AirSense: api-reference/dock-to-cloud/mqtt/dock/dock3/airsense.md
+          - 远程调试: api-reference/dock-to-cloud/mqtt/dock/dock3/cmd.md
+          - 配置更新: api-reference/dock-to-cloud/mqtt/dock/dock3/config.md
+          - 自定义飞行区: api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region.md
+          - 设备管理: api-reference/dock-to-cloud/mqtt/dock/dock3/device.md
+          - 指令飞行: api-reference/dock-to-cloud/mqtt/dock/dock3/drc.md
+          - ESDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/dock3/esdk-transmit-custom-data.md
+          - 固件升级: api-reference/dock-to-cloud/mqtt/dock/dock3/firmware.md
+          - 远程解禁: api-reference/dock-to-cloud/mqtt/dock/dock3/flysafe.md
+          - HMS 管理: api-reference/dock-to-cloud/mqtt/dock/dock3/hms.md
+          - 直播功能: api-reference/dock-to-cloud/mqtt/dock/dock3/live.md
+          - 远程日志: api-reference/dock-to-cloud/mqtt/dock/dock3/log.md
+          - 媒体管理: api-reference/dock-to-cloud/mqtt/dock/dock3/media.md
+          - 组织管理: api-reference/dock-to-cloud/mqtt/dock/dock3/organization.md
+          - 设备属性: api-reference/dock-to-cloud/mqtt/dock/dock3/properties.md
+          - PSDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/dock3/psdk-transmit-custom-data.md
+          - PSDK 功能: api-reference/dock-to-cloud/mqtt/dock/dock3/psdk.md
+          - 远程控制: api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control.md
+          - 航线管理: api-reference/dock-to-cloud/mqtt/dock/dock3/wayline.md
+        - AirSense 功能: api-reference/dock-to-cloud/mqtt/dock/airsense.md
+        - 指令飞行功能: api-reference/dock-to-cloud/mqtt/dock/drc.md
+        - ESDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/esdk-transmit-custom-data.md
+        - 远程日志：新增支持 minio: api-reference/dock-to-cloud/mqtt/dock/log.md
+        - 指令飞行相关设备属性: api-reference/dock-to-cloud/mqtt/dock/properties.md
+        - PSDK 互联互通: api-reference/dock-to-cloud/mqtt/dock/psdk-transmit-custom-data.md
+        - PSDK 和喊话器相关协议: api-reference/dock-to-cloud/mqtt/dock/psdk.md
+        - 航线管理功能: api-reference/dock-to-cloud/mqtt/dock/wayline.md
+      - Topic 定义: api-reference/dock-to-cloud/mqtt/topic-definition.md
+  - Pilot 上云:
+    - HTTPS:
+      - 地图元素:
+        - 创建地图元素: api-reference/pilot-to-cloud/https/map-elements/create.md
+        - 删除地图元素: api-reference/pilot-to-cloud/https/map-elements/delete.md
+        - 获取地图元素: api-reference/pilot-to-cloud/https/map-elements/obtain.md
+        - 更新地图元素: api-reference/pilot-to-cloud/https/map-elements/update.md
+      - 媒体管理:
+        - 文件快传: api-reference/pilot-to-cloud/https/media-management/fast-upload.md
+        - 文件组上传完成后回调: api-reference/pilot-to-cloud/https/media-management/group-upload-callback.md
+        - 媒体文件上传结果上报: api-reference/pilot-to-cloud/https/media-management/mediafile-upload-result-report.md
+        - 获取已存在的文件精简指纹: api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint.md
+        - 获取上传临时凭证: api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential.md
+      - 态势感知:
+        - 获取设备拓扑: api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list.md
+      - 航线管理:
+        - 批量取消收藏航线文件: api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect.md
+        - 批量收藏航线文件: api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch.md
+        - 获取重复的航线文件名称: api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name.md
+        - 获取航线文件下载地址: api-reference/pilot-to-cloud/https/waypoint-management/get-waypointfile-download-location.md
+        - 获取上传临时凭证: api-reference/pilot-to-cloud/https/waypoint-management/obtain-temporary-credential.md
+        - 获取航线文件列表: api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list.md
+        - 航线文件上传结果上报: api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report.md
+    - MQTT:
+      - DJI RC Plus 2:
+        - 设备管理: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/device.md
+        - 指令飞行: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/drc.md
+        - 直播功能: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/live.md
+        - 设备属性: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/properties.md
+        - 远程控制: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control.md
+      - M3 系列:
+        - 设备属性: api-reference/pilot-to-cloud/mqtt/m3-series/properties.md
+      - M4 系列:
+        - 设备属性: api-reference/pilot-to-cloud/mqtt/m4-series/properties.md
+      - Matrice 400:
+        - 设备属性: api-reference/pilot-to-cloud/mqtt/matrice-400/properties.md
+      - 其他:
+        - 飞行器:
+          - 设备属性: api-reference/pilot-to-cloud/mqtt/others/aircraft/properties.md
+        - 遥控器:
+          - 设备管理: api-reference/pilot-to-cloud/mqtt/others/rc/device.md
+          - 直播功能: api-reference/pilot-to-cloud/mqtt/others/rc/live.md
+          - 设备属性: api-reference/pilot-to-cloud/mqtt/others/rc/properties.md
+      - RC Pro:
+        - 设备管理: api-reference/pilot-to-cloud/mqtt/rc-pro/device.md
+        - 指令飞行: api-reference/pilot-to-cloud/mqtt/rc-pro/drc.md
+        - 直播功能: api-reference/pilot-to-cloud/mqtt/rc-pro/live.md
+        - 设备属性: api-reference/pilot-to-cloud/mqtt/rc-pro/properties.md
+        - 远程控制: api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control.md
+      - Topic 定义: api-reference/pilot-to-cloud/mqtt/topic-definition.md
+    - WebSocket:
+      - 地图元素:
+        - 消息发布: api-reference/pilot-to-cloud/websocket/map-elements/message-push.md
+      - 态势感知:
+        - 消息发布: api-reference/pilot-to-cloud/websocket/situation-awareness/message-push.md
+    - JSBridge: api-reference/pilot-to-cloud/jsbridge.md
+- 调试:
+  - Pilot Webview 调试: debug/dji-pilot2-webview-debug.md
+  - Pilot 日志导出: debug/log-export.md
+  - MQTT 调试工具: debug/mqttx.md
+- 功能集:
+  - 机场功能集:
+    - AI目标识别: feature-set/dock-feature-set/ai-target-recognition.md
+    - 自定义飞行区: feature-set/dock-feature-set/custom-flight-area.md
+    - 机场上云: feature-set/dock-feature-set/dock-access-to-cloud.md
+    - 设备管理: feature-set/dock-feature-set/dock-device-management.md
+    - 直播功能: feature-set/dock-feature-set/dock-livestream.md
+    - 媒体管理: feature-set/dock-feature-set/dock-media-management.md
+    - 航线管理: feature-set/dock-feature-set/dock-wayline-management.md
+    - 指令飞行/远程控制: feature-set/dock-feature-set/drc.md
+    - 固件升级: feature-set/dock-feature-set/firmware-upgrade.md
+    - HMS 功能: feature-set/dock-feature-set/hms.md
+    - 蛙跳任务: feature-set/dock-feature-set/multi-dock.md
+    - 远程调试: feature-set/dock-feature-set/remote-debug.md
+    - 远程日志: feature-set/dock-feature-set/remote-log.md
+  - Pilot 功能集:
+    - 指令飞行/远程控制: feature-set/pilot-feature-set/drc.md
+    - Pilot 上云: feature-set/pilot-feature-set/pilot-access-to-cloud.md
+    - 直播功能: feature-set/pilot-feature-set/pilot-livestream.md
+    - 地图元素: feature-set/pilot-feature-set/pilot-map-elements.md
+    - 媒体管理: feature-set/pilot-feature-set/pilot-media-management.md
+    - 态势感知: feature-set/pilot-feature-set/pilot-situation-awareness.md
+    - 打开第三方 App: feature-set/pilot-feature-set/pilot-third-party-app.md
+    - 航线管理: feature-set/pilot-feature-set/pilot-wayline-management.md
+    - 通过 JSBridge 获取日志: feature-set/pilot-feature-set/pull-pilot-log.md
+- 基本介绍:
+  - 基础概念:
+    - HTTPS: overview/basic-concept/https.md
+    - JSBridge: overview/basic-concept/jsbridge.md
+    - MQTT: overview/basic-concept/mqtt.md
+    - 名词解释: overview/basic-concept/proper-noun.md
+    - 物模型: overview/basic-concept/thing-model.md
+    - WebSocket: overview/basic-concept/websocket.md
+  - 产品架构: overview/product-architecture.md
+  - 产品介绍: overview/product-introduction.md
+  - 产品支持: overview/product-support.md
+- 快速开始:
+  - 基于Docker的部署: quick-start/docker-deployment-steps.md
+  - 环境准备清单: quick-start/environment-prepare-list.md
+  - 功能预览视频: quick-start/function-display-video.md
+  - 基于源码的部署: quick-start/source-code-deployment-steps.md
+- 错误码: error-code.md
+- FAQ: faq.md
+- 安全飞行须知: flight-safety-notification.md
+- 文档阅读指引: tutorial-map.md
