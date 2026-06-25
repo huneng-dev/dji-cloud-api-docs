@@ -1,0 +1,9363 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="DJI Cloud API 文档离线镜像（中文），基于官方最新版本构建，便于 AI 读取与开发者离线查阅。">
+      
+      
+        <meta name="author" content="Community">
+      
+      
+        <link rel="canonical" href="https://huneng-dev.github.io/dji-cloud-api-docs/error-code/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../faq/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Error code - DJI 上云 API 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="DJI 上云 API 文档" class="md-header__button md-logo" aria-label="DJI 上云 API 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DJI 上云 API 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Error code
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/huneng-dev/dji-cloud-api-docs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dji-cloud-api-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Error code
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Faq
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../flight-safety-notification/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Flight safety notification
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tutorial-map/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorial map
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../api-reference/dji-wpml/common-element/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Api reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../debug/dji-pilot2-webview-debug/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Debug
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../feature-set/dock-feature-set/ai-target-recognition/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Feature set
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../overview/product-architecture/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../quick-start/docker-deployment-steps/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Quick start
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DJI 上云 API 文档" class="md-nav__button md-logo" aria-label="DJI 上云 API 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DJI 上云 API 文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/huneng-dev/dji-cloud-api-docs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dji-cloud-api-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error code
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # 错误码说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # 错误码与描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faq
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flight-safety-notification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flight safety notification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Api reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dji wpml
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dji wpml
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dji-wpml/common-element/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common element
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dji-wpml/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dji-wpml/template-kml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template kml
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dji-wpml/waylines-wpml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Waylines wpml
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock to cloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dock to cloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1" id="__nav_6_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mqtt
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mqtt
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/topic-definition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic definition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1_2" id="__nav_6_2_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aircraft
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aircraft
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/aircraft/m30-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M30 properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/aircraft/m3d-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M3d properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/aircraft/m4d-properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M4d properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/aircraft/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Property
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1_3" id="__nav_6_2_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dock
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/airsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/esdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Property
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/psdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/psdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/wayline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2_1_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1_3_9" id="__nav_6_2_1_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_1_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dock1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/airsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/cmd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/custom-flight-area/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom flight area
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/esdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/flysafe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/hms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/psdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/psdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock1/wayline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2_1_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1_3_10" id="__nav_6_2_1_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_1_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dock2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/airsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/cmd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/custom-flight-area/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom flight area
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/esdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/hms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/psdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/psdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock2/wayline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2_1_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1_3_11" id="__nav_6_2_1_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_2_1_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dock3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/airsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/cmd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/esdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/flysafe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/hms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/psdk-transmit-custom-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/psdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/dock-to-cloud/mqtt/dock/dock3/wayline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot to cloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot to cloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/jsbridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jsbridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_2" id="__nav_6_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Https
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Https
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_2_1" id="__nav_6_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map elements
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Map elements
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/map-elements/create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/map-elements/delete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/map-elements/obtain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/map-elements/update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_2_2" id="__nav_6_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media management
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Media management
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/media-management/fast-upload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fast upload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/media-management/group-upload-callback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group upload callback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/media-management/mediafile-upload-result-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mediafile upload result report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtain exited tiny fingerprint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtain temporary credential
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_2_3" id="__nav_6_3_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Situation awareness
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Situation awareness
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtain device topology list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_2_4" id="__nav_6_3_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Waypoint management
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Waypoint management
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancel collect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collect waypointfile in batch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get duplicated waypointfile name
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/get-waypointfile-download-location/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get waypointfile download location
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/obtain-temporary-credential/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtain temporary credential
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtain waypointfile list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Waypointfile upload result report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3" id="__nav_6_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mqtt
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mqtt
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/topic-definition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic definition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_2" id="__nav_6_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dji rc plus 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dji rc plus 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_3" id="__nav_6_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M3 series
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    M3 series
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/m3-series/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_4" id="__nav_6_3_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M4 series
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    M4 series
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/m4-series/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_5" id="__nav_6_3_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matrice 400
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Matrice 400
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/matrice-400/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_6" id="__nav_6_3_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Others
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Others
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_6_1" id="__nav_6_3_3_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aircraft
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_3_3_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aircraft
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/others/aircraft/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_6_2" id="__nav_6_3_3_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_6_3_3_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Rc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/others/rc/device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/others/rc/live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/others/rc/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_3_7" id="__nav_6_3_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rc pro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Rc pro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/rc-pro/device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/rc-pro/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/rc-pro/live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/rc-pro/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    # Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_4" id="__nav_6_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Websocket
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Websocket
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_4_1" id="__nav_6_3_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map elements
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Map elements
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/websocket/map-elements/message-push/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Message push
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_4_2" id="__nav_6_3_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Situation awareness
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_3_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Situation awareness
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/pilot-to-cloud/websocket/situation-awareness/message-push/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Message push
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debug
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Debug
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debug/dji-pilot2-webview-debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dji pilot2 webview debug
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debug/log-export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Log export
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debug/mqttx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mqttx
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature set
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Feature set
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock feature set
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dock feature set
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/ai-target-recognition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ai target recognition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/custom-flight-area/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom flight area
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/dock-access-to-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock access to cloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/dock-device-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock device management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/dock-livestream/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock livestream
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/dock-media-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock media management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/dock-wayline-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dock wayline management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/firmware-upgrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Firmware upgrade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/hms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/multi-dock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi dock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/remote-debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remote debug
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/dock-feature-set/remote-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remote log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot feature set
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot feature set
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/drc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-access-to-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot access to cloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-livestream/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot livestream
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-map-elements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot map elements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-media-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot media management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-situation-awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot situation awareness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-third-party-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot third party app
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pilot-wayline-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot wayline management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-set/pilot-feature-set/pull-pilot-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pull pilot log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Overview
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/product-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/product-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic concept
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basic concept
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/basic-concept/https/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Https
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/basic-concept/jsbridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jsbridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/basic-concept/mqtt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mqtt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/basic-concept/proper-noun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proper noun
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/basic-concept/thing-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thing model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/basic-concept/websocket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Websocket
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Quick start
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/docker-deployment-steps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker deployment steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/environment-prepare-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment prepare list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/function-display-video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function display video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/source-code-deployment-steps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Source code deployment steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # 错误码说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # 错误码与描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Error code</h1>
+
+<h2 id="_1"><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/error-code.html#%E9%94%99%E8%AF%AF%E7%A0%81%E8%AF%B4%E6%98%8E">#</a> 错误码说明<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>整体而言，错误码为 “ABCDEF” 格式，A 说明上报来源，BC 说明功能模块，DEF 为模块自定义错误。</li>
+<li>HMS 的错误描述不能直接通过错误码得到。HMS 的异常描述的获取，需要通过 HMS 错误码按照 <a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/hms.html">HMS 功能open in new window</a>章节介绍的规则完成<code>文案Key</code>的拼接，依靠<code>文案Key</code>在<a href="https://terra-1-g.djicdn.com/fee90c2e03e04e8da67ea6f56365fc76/SDK%20%E6%96%87%E6%A1%A3/CloudAPI/hms.json">hms.jsonopen in new window</a>中查询告警文案，告警文案中有变量的需要按照规则替换。</li>
+<li>如果下文中提供的错误码描述无法解答你遇到的问题，我们在售后论坛中提供了<a href="https://sdk-forum.dji.net/hc/zh-cn/articles/33865335025945-%E4%B8%8A%E4%BA%91API-%E9%94%99%E8%AF%AF%E7%A0%81">错误码补充阅读open in new window</a>。
+| 错误码首位（A）  | 错误来源  |<br />
+| --- | --- |<br />
+| 3  | 设备端  |<br />
+| 5 |<br />
+| 4  | DJI Pilot 2  |<br />
+| 6 |  </li>
+</ol>
+<h2 id="_2"><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/error-code.html#%E9%94%99%E8%AF%AF%E7%A0%81%E4%B8%8E%E6%8F%8F%E8%BF%B0">#</a> 错误码与描述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>错误码描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>312014</td>
+<td>设备升级中，请勿重复操作</td>
+</tr>
+<tr>
+<td>312015</td>
+<td>机场：{dock_org_name} 业务繁忙无法进行设备升级，请等待机场处于空闲中后再试</td>
+</tr>
+<tr>
+<td>312016</td>
+<td>升级失败，机场和飞行器图传链路异常，请重启机场和飞行器后重试</td>
+</tr>
+<tr>
+<td>312022</td>
+<td>飞行器开机失败或未连接，请检查飞行器是否在舱内，是否安装电池，机场和飞行器是否已对频</td>
+</tr>
+<tr>
+<td>312023</td>
+<td>推杆闭合失败无法升级飞行器，请检查急停按钮是否被按下，推杆是否有异物卡住</td>
+</tr>
+<tr>
+<td>312027</td>
+<td>升级失败，机场未检测到飞行器</td>
+</tr>
+<tr>
+<td>312028</td>
+<td>升级失败，设备升级过程中设备被重启</td>
+</tr>
+<tr>
+<td>312029</td>
+<td>设备重启中无法进行设备升级，请等待设备重启完成后重试</td>
+</tr>
+<tr>
+<td>312030</td>
+<td>升级失败，飞行器增强图传开启后无法升级，请关闭飞行器增强图传后重试</td>
+</tr>
+<tr>
+<td>312704</td>
+<td>设备电量过低，请充电至20%以上后重试</td>
+</tr>
+<tr>
+<td>314000</td>
+<td>设备当前无法支持该操作，建议检查设备当前工作状态</td>
+</tr>
+<tr>
+<td>314001</td>
+<td>飞行任务下发失败，请稍后重试</td>
+</tr>
+<tr>
+<td>314002</td>
+<td>飞行任务下发失败，请稍后重试</td>
+</tr>
+<tr>
+<td>314003</td>
+<td>航线文件格式不兼容，请检查航线文件是否正确</td>
+</tr>
+<tr>
+<td>314005</td>
+<td>飞行任务下发失败，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>314006</td>
+<td>飞行器初始化失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>314007</td>
+<td>机场传输航线至飞行器失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>314008</td>
+<td>飞行器起飞前准备超时，请重启机场后重试</td>
+</tr>
+<tr>
+<td>314009</td>
+<td>飞行器初始化失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>314010</td>
+<td>航线执行失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>314011</td>
+<td>机场系统异常，无法获取飞行任务执行结果</td>
+</tr>
+<tr>
+<td>314012</td>
+<td>飞行器起飞前准备失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>314013</td>
+<td>飞行任务下发失败，机场无法获取到本次飞行任务的航线，无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>314014</td>
+<td>机场系统异常，飞行任务执行失败，请稍后重试</td>
+</tr>
+<tr>
+<td>314015</td>
+<td>机场传输精准复拍航线至飞行器失败，无法执行飞行任务，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>314016</td>
+<td>航线文件解析失败，无法执行飞行任务，请检查航线文件</td>
+</tr>
+<tr>
+<td>314017</td>
+<td>航线文件解析失败，请检查航线后再试</td>
+</tr>
+<tr>
+<td>314018</td>
+<td>飞行器 RTK 定位异常，无法执行飞行任务，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>314019</td>
+<td>飞行器 RTK 收敛失败，无法执行飞行任务，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>314020</td>
+<td>飞行器不在停机坪正中间或飞行器朝向不正确，无法执行飞行任务，请检查飞行器位置和朝向</td>
+</tr>
+<tr>
+<td>314021</td>
+<td>飞行器 RTK 定位异常，无法执行飞行任务，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>314024</td>
+<td>进离场航线下发失败，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>314025</td>
+<td>RTK收敛超时，用户手动取消任务</td>
+</tr>
+<tr>
+<td>314200</td>
+<td>任务失败，由于机场网络断开，飞行器已自动返航，请确保机场已连接网络后再试</td>
+</tr>
+<tr>
+<td>315000</td>
+<td>机场通信异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315001</td>
+<td>机场通信异常，请远程开启飞机并等待 1min 后，再次下发任务重试</td>
+</tr>
+<tr>
+<td>315002</td>
+<td>机场通信异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315003</td>
+<td>机场通信异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315004</td>
+<td>任务失败，请等待两个机场都空闲后，再次下发任务重试</td>
+</tr>
+<tr>
+<td>315005</td>
+<td>机场通信异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315006</td>
+<td>机场通信异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315007</td>
+<td>机场通信异常，请将机场升级到最新版本或重启机场后重试</td>
+</tr>
+<tr>
+<td>315008</td>
+<td>降落机场和起飞机场标定信息不一致，请确认两个机场均链路通畅且使用了相同的网络信息标定</td>
+</tr>
+<tr>
+<td>315009</td>
+<td>机场通信异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315010</td>
+<td>无法停止飞行任务，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315011</td>
+<td>无法停止飞行任务，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315012</td>
+<td>无法停止飞行任务，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315013</td>
+<td>飞行任务下发失败，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315014</td>
+<td>当前任务类型不支持设置返航点</td>
+</tr>
+<tr>
+<td>315015</td>
+<td>返航点设置失败，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315016</td>
+<td>飞行任务下发失败，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315017</td>
+<td>飞行任务下发失败，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315018</td>
+<td>任务失败，请等待两个机场都空闲后，再次下发任务重试</td>
+</tr>
+<tr>
+<td>315019</td>
+<td>设备部署位置不佳，无法执行蛙跳任务，请选择其它机场再试</td>
+</tr>
+<tr>
+<td>315050</td>
+<td>机场系统异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>315051</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315052</td>
+<td>机场位置未收敛，请等待一段时间后重试</td>
+</tr>
+<tr>
+<td>315053</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315054</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315055</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315056</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315057</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315058</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315059</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315060</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315061</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315062</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315063</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315064</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>315065</td>
+<td>任务失败，请重启机场并再次下发任务后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>316001</td>
+<td>飞行器参数配置失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316002</td>
+<td>飞行器参数配置失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316003</td>
+<td>飞行器参数配置失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316004</td>
+<td>飞行器参数配置失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316005</td>
+<td>飞行器 RTK 收敛失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316006</td>
+<td>任务超时，飞行器已丢失或降落时机场未开启舱盖或展开推杆，飞行器无法降落回机场，请尽快至机场部署现场检查飞行器状况</td>
+</tr>
+<tr>
+<td>316007</td>
+<td>飞行器初始化失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316008</td>
+<td>机场获取飞行器控制权失败，无法执行飞行任务，请确认遥控器未锁定控制权</td>
+</tr>
+<tr>
+<td>316009</td>
+<td>飞行器电量低于30%，无法执行飞行任务，请充电后重试（建议电量≥50%）</td>
+</tr>
+<tr>
+<td>316010</td>
+<td>机场未检测到飞行器，无法执行飞行任务，请检查舱内是否有飞行器，机场与飞行器是否已对频，或重启机场后重试</td>
+</tr>
+<tr>
+<td>316011</td>
+<td>飞行器降落位置偏移过大，请检查飞行器是否需要现场摆正</td>
+</tr>
+<tr>
+<td>316012</td>
+<td>飞行器起飞前准备失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316013</td>
+<td>飞行器起飞前准备失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316014</td>
+<td>飞行器起飞前准备失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316015</td>
+<td>飞行器 RTK 收敛位置距离机场过远，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>316016</td>
+<td>飞行器降落至机场超时，可能是机场与飞行器断连导致，请通过直播查看飞行器是否降落至舱内</td>
+</tr>
+<tr>
+<td>316017</td>
+<td>获取飞行器媒体数量超时，可能是机场与飞行器断连导致，请通过直播查看飞行器是否降落至舱内</td>
+</tr>
+<tr>
+<td>316018</td>
+<td>飞行任务执行超时，可能是机场与飞行器断连导致，请通过直播查看飞行器是否降落至舱内</td>
+</tr>
+<tr>
+<td>316019</td>
+<td>机场系统错误，无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>316020</td>
+<td>飞行器使用的 RTK 信号源错误，请稍后重试</td>
+</tr>
+<tr>
+<td>316021</td>
+<td>飞行器 RTK 信号源检查超时，请稍后重试</td>
+</tr>
+<tr>
+<td>316022</td>
+<td>飞行器无法执行返航指令，请检查飞行器是否已开机，机场与飞行器是否已断连，请确认无以上问题后重试</td>
+</tr>
+<tr>
+<td>316023</td>
+<td>飞行器无法执行返航指令，飞行器已被 B 控接管，请在 B 控操控飞行器，或关闭 B 控后重试</td>
+</tr>
+<tr>
+<td>316024</td>
+<td>飞行器执行返航指令失败，请检查飞行器是否已起飞，确认飞行器已起飞后请重试</td>
+</tr>
+<tr>
+<td>316025</td>
+<td>飞行器参数配置失败，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>316026</td>
+<td>机场急停按钮被按下，无法执行飞行任务，请释放急停按钮后重试</td>
+</tr>
+<tr>
+<td>316027</td>
+<td>飞行器参数配置超时，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>316029</td>
+<td>机场急停按钮被按下，飞行器将飞往备降点降落，请立即检查飞行器是否已安全降落并将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>316032</td>
+<td>获取电池数据超时，请稍后重试或重启飞行器后重试</td>
+</tr>
+<tr>
+<td>316033</td>
+<td>飞行器电池循环次数过高，为保证飞行安全，已自动终止任务，建议更换该电池</td>
+</tr>
+<tr>
+<td>316034</td>
+<td>无法起飞，飞行器固件版本与机场固件版本不匹配，为保证飞行安全请升级固件后再试</td>
+</tr>
+<tr>
+<td>316035</td>
+<td>进离场航线下发失败，请确保设备固件为最新版本后重新下发任务，如果持续报错，请联系大疆售后。</td>
+</tr>
+<tr>
+<td>316050</td>
+<td>飞行器因电量过低在舱外降落，请立即检查飞行器是否已安全降落并将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>316051</td>
+<td>飞行任务异常，飞行器在舱外降落，请立即检查飞行器是否已安全降落并将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>316052</td>
+<td>飞行任务异常，飞行器将飞往备降点降落，请立即检查飞行器是否已安全降落并将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>316053</td>
+<td>用户已操控飞行器降落，请立即检查飞行器是否已安全降落并将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>316100</td>
+<td>获取相机概要信息失败，请重试</td>
+</tr>
+<tr>
+<td>316101</td>
+<td>设置相机为单拍模式失败，请重试</td>
+</tr>
+<tr>
+<td>316102</td>
+<td>关闭相机水印失败，请重试</td>
+</tr>
+<tr>
+<td>316103</td>
+<td>设置测光模式到平均测光失败，请重试</td>
+</tr>
+<tr>
+<td>316104</td>
+<td>切换镜头到广角镜头失败，请重试</td>
+</tr>
+<tr>
+<td>316105</td>
+<td>设置相机存储照片失败，请重试</td>
+</tr>
+<tr>
+<td>316106</td>
+<td>红外变焦倍数设置失败，请重试</td>
+</tr>
+<tr>
+<td>316107</td>
+<td>照片尺寸设置4k失败，请重试</td>
+</tr>
+<tr>
+<td>316108</td>
+<td>设置照片存储格式为jpeg格式失败，请重试</td>
+</tr>
+<tr>
+<td>316109</td>
+<td>关闭相机畸变矫正失败，请重试</td>
+</tr>
+<tr>
+<td>316110</td>
+<td>打开相机机械快门失败，请重试</td>
+</tr>
+<tr>
+<td>316111</td>
+<td>设置对焦模式失败，请重试</td>
+</tr>
+<tr>
+<td>317001</td>
+<td>获取飞行器媒体文件数量失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>317002</td>
+<td>飞行器存储格式化失败，飞行器未开机、未连接或未检测到相机，请确认无以上问题后重试，或重启飞行器后重试</td>
+</tr>
+<tr>
+<td>317003</td>
+<td>飞行器存储格式化失败，请重启飞行器后重试</td>
+</tr>
+<tr>
+<td>317004</td>
+<td>机场媒体文件格式化失败，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>317005</td>
+<td>飞行器结束录像失败，本次飞行任务的媒体文件可能无法上传</td>
+</tr>
+<tr>
+<td>317006</td>
+<td>无法格式化，请等待当前飞行器媒体文件下载完成后再试</td>
+</tr>
+<tr>
+<td>317007</td>
+<td>获取媒体文件数量失败，请稍后重试，如本架次任务有媒体文件且持续报错可联系大疆售后</td>
+</tr>
+<tr>
+<td>319001</td>
+<td>机场作业中或设备异常反馈上传日志中，无法执行飞行任务，请等待当前飞行任务或操作执行完成后重试</td>
+</tr>
+<tr>
+<td>319002</td>
+<td>机场系统运行异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>319003</td>
+<td>机场系统运行异常，请重新下发任务</td>
+</tr>
+<tr>
+<td>319004</td>
+<td>飞行任务执行超时，已自动终止本次飞行任务</td>
+</tr>
+<tr>
+<td>319005</td>
+<td>云端与机场通信异常，无法执行飞行任务</td>
+</tr>
+<tr>
+<td>319006</td>
+<td>取消飞行任务失败，飞行任务已经在执行中</td>
+</tr>
+<tr>
+<td>319007</td>
+<td>修改飞行任务失败，飞行任务已经在执行中</td>
+</tr>
+<tr>
+<td>319008</td>
+<td>机场时间与云端时间不同步，机场无法执行飞行任务</td>
+</tr>
+<tr>
+<td>319009</td>
+<td>飞行任务下发失败，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>319010</td>
+<td>机场固件版本过低，无法执行飞行任务，请升级机场固件为最新版本后重试</td>
+</tr>
+<tr>
+<td>319015</td>
+<td>机场正在初始化中，无法执行飞行任务，请等待机场初始化完成后重试</td>
+</tr>
+<tr>
+<td>319016</td>
+<td>机场正在执行其他飞行任务，无法执行本次飞行任务</td>
+</tr>
+<tr>
+<td>319017</td>
+<td>机场正在处理上次飞行任务媒体文件，无法执行本次飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>319018</td>
+<td>机场正在自动导出日志中（设备异常反馈），无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>319019</td>
+<td>机场正在拉取日志中（设备异常反馈），无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>319020</td>
+<td>航线中断失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319021</td>
+<td>退出远程控制失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319022</td>
+<td>指点飞行失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319023</td>
+<td>指点飞行停止失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319024</td>
+<td>一键起飞失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319025</td>
+<td>机场未准备完成，无法执行云端下发的飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>319026</td>
+<td>飞行器电池电量低于用户设置的任务开始执行的电量，请等待充电完成后再执行飞行任务</td>
+</tr>
+<tr>
+<td>319027</td>
+<td>机场或飞行器剩余存储容量过低，无法执行飞行任务，请等待媒体文件上传，机场和飞行器存储容量释放后再执行飞行任务</td>
+</tr>
+<tr>
+<td>319028</td>
+<td>正在更新自定义飞行区</td>
+</tr>
+<tr>
+<td>319029</td>
+<td>正在更新离线地图</td>
+</tr>
+<tr>
+<td>319030</td>
+<td>操作失败，无飞行器控制权</td>
+</tr>
+<tr>
+<td>319031</td>
+<td>控制权异常，请刷新重试</td>
+</tr>
+<tr>
+<td>319032</td>
+<td>指点飞行失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319033</td>
+<td>虚拟摇杆操作失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319034</td>
+<td>虚拟摇杆操作失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319035</td>
+<td>急停失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319036</td>
+<td>设备远程调试中，请稍后重试</td>
+</tr>
+<tr>
+<td>319037</td>
+<td>设备本地调试中，请稍后重试</td>
+</tr>
+<tr>
+<td>319038</td>
+<td>设备正在升级，请稍后重试</td>
+</tr>
+<tr>
+<td>319042</td>
+<td>航线恢复失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319043</td>
+<td>取消返航失败，请稍后重试</td>
+</tr>
+<tr>
+<td>319044</td>
+<td>航线任务已结束，无法恢复</td>
+</tr>
+<tr>
+<td>319045</td>
+<td>急停成功，请重新按键操作</td>
+</tr>
+<tr>
+<td>319046</td>
+<td>无法暂停航线，飞行器尚未进入航线或已退出航线</td>
+</tr>
+<tr>
+<td>319999</td>
+<td>机场系统运行异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>321000</td>
+<td>航线执行异常，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>321004</td>
+<td>航线文件解析失败，无法执行飞行任务，请检查航线文件</td>
+</tr>
+<tr>
+<td>321005</td>
+<td>航线缺少断点信息，机场无法执行飞行任务</td>
+</tr>
+<tr>
+<td>321257</td>
+<td>飞行任务已在执行中，请勿重复执行</td>
+</tr>
+<tr>
+<td>321258</td>
+<td>飞行任务无法终止，请检查飞行器状态</td>
+</tr>
+<tr>
+<td>321259</td>
+<td>飞行任务未开始执行，无法终止飞行任务</td>
+</tr>
+<tr>
+<td>321260</td>
+<td>飞行任务未开始执行，无法中断飞行任务</td>
+</tr>
+<tr>
+<td>321513</td>
+<td>航线规划高度已超过飞行器限高，机场无法执行飞行任务</td>
+</tr>
+<tr>
+<td>321514</td>
+<td>任务失败，起点或终点位于限远区域的缓冲区内或超过了限远距离</td>
+</tr>
+<tr>
+<td>321515</td>
+<td>航线穿过限飞区，机场无法执行飞行任务</td>
+</tr>
+<tr>
+<td>321516</td>
+<td>飞行器飞行高度过低，飞行任务执行被终止</td>
+</tr>
+<tr>
+<td>321517</td>
+<td>飞行器触发避障，飞行任务执行被终止。为保证飞行安全，请勿用当前航线执行断点续飞任务</td>
+</tr>
+<tr>
+<td>321519</td>
+<td>飞行器接近限飞区或限远距离自动返航，无法完成航线飞行</td>
+</tr>
+<tr>
+<td>321523</td>
+<td>飞行器起飞失败，请稍后重试，如果仍报错请联系大疆售后。</td>
+</tr>
+<tr>
+<td>321524</td>
+<td>飞行器起飞前准备失败，可能是飞行器无法定位或档位错误导致，请检查飞行器状态</td>
+</tr>
+<tr>
+<td>321528</td>
+<td>触碰自定义飞行区边界，航线任务已暂停</td>
+</tr>
+<tr>
+<td>321529</td>
+<td>目标点位于禁飞区域或者障碍物内，无法到达，航线任务已暂停，请重新规划后再试</td>
+</tr>
+<tr>
+<td>321530</td>
+<td>飞行器飞行航线过程中轨迹规划失败，航线任务已暂停</td>
+</tr>
+<tr>
+<td>321531</td>
+<td>进离场航线执行失败，请联系大疆售后。</td>
+</tr>
+<tr>
+<td>321532</td>
+<td>进离场航线执行失败，请联系大疆售后。</td>
+</tr>
+<tr>
+<td>321533</td>
+<td>进离场航线执行失败，请联系大疆售后。</td>
+</tr>
+<tr>
+<td>321769</td>
+<td>飞行器卫星定位信号差，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>321770</td>
+<td>飞行器挡位错误，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>321771</td>
+<td>飞行器返航点未设置，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>321772</td>
+<td>飞行器电量低于30%，无法执行飞行任务，请充电后重试（建议电量≥50%）</td>
+</tr>
+<tr>
+<td>321773</td>
+<td>飞行器执行飞行任务过程中低电量返航，无法完成航线飞行</td>
+</tr>
+<tr>
+<td>321775</td>
+<td>飞行器航线飞行过程中失联，无法完成航线飞行</td>
+</tr>
+<tr>
+<td>321776</td>
+<td>飞行器 RTK 收敛失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>321777</td>
+<td>飞行器未悬停，无法开始执行飞行任务</td>
+</tr>
+<tr>
+<td>321778</td>
+<td>用户使用 B 控操控飞行器起桨，机场无法执行飞行任务</td>
+</tr>
+<tr>
+<td>321784</td>
+<td>任务过程中遇到大风紧急返航</td>
+</tr>
+<tr>
+<td>321788</td>
+<td>任务失败，由于信号受到干扰，导致异常返航</td>
+</tr>
+<tr>
+<td>322281</td>
+<td>任务失败，机场执行飞行任务过程被手动打断或异常终止</td>
+</tr>
+<tr>
+<td>322282</td>
+<td>机场执行飞行任务过程中被中断，飞行器被云端用户或遥控器接管</td>
+</tr>
+<tr>
+<td>322283</td>
+<td>机场执行飞行任务过程中被用户触发返航，无法完成航线飞行</td>
+</tr>
+<tr>
+<td>322539</td>
+<td>航线的断点信息错误，机场无法执行飞行任务</td>
+</tr>
+<tr>
+<td>322563</td>
+<td>航线轨迹生成失败，请检查飞行器视觉镜头是否存在脏污或重启飞行器后再试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>324012</td>
+<td>日志压缩过程超时，所选日志过多，请减少选择的日志后重试</td>
+</tr>
+<tr>
+<td>324013</td>
+<td>设备日志列表获取失败，请稍后重试</td>
+</tr>
+<tr>
+<td>324014</td>
+<td>设备日志列表为空，请刷新页面或重启机场后重试</td>
+</tr>
+<tr>
+<td>324015</td>
+<td>飞行器已关机或未连接，无法获取日志列表，请确认飞行器在舱内，通过远程调试将飞行器开机后重试</td>
+</tr>
+<tr>
+<td>324016</td>
+<td>机场存储空间不足，日志压缩失败，请清理机场存储空间或稍后重试</td>
+</tr>
+<tr>
+<td>324017</td>
+<td>日志压缩失败，无法获取所选飞行器日志，请刷新页面或重启机场后重试</td>
+</tr>
+<tr>
+<td>324018</td>
+<td>日志文件拉取失败，导致本次设备异常反馈上传失败，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>324019</td>
+<td>因机场网络异常，日志上传失败，请稍后重试。如果连续多次出现该问题，请联系代理商或大疆售后进行网络排障</td>
+</tr>
+<tr>
+<td>324021</td>
+<td>因机场断电或重启导致日志导出中断，日志导出失败，请稍后重试</td>
+</tr>
+<tr>
+<td>324030</td>
+<td>因机场网络异常、飞行器图传链路异常等原因，媒体文件暂时无法上传或文件已上传但云端读取失败</td>
+</tr>
+<tr>
+<td>325001</td>
+<td>云端下发命令不符合格式要求，设备无法执行</td>
+</tr>
+<tr>
+<td>325003</td>
+<td>指令响应失败，请重试</td>
+</tr>
+<tr>
+<td>325004</td>
+<td>设备端命令请求已超时，请重试</td>
+</tr>
+<tr>
+<td>325005</td>
+<td>当前机场无法响应任务，请稍后重试</td>
+</tr>
+<tr>
+<td>325006</td>
+<td>当前机场启动检查中，请稍后重试</td>
+</tr>
+<tr>
+<td>325007</td>
+<td>当前机场执行作业任务中，请稍后重试</td>
+</tr>
+<tr>
+<td>325008</td>
+<td>当前机场处理作业任务结果中，请稍后重试</td>
+</tr>
+<tr>
+<td>325009</td>
+<td>当前机场执行远程日志导出中，请稍后重试</td>
+</tr>
+<tr>
+<td>325010</td>
+<td>当前机场更新自定义飞行区中，请稍后重试</td>
+</tr>
+<tr>
+<td>325011</td>
+<td>当前机场更新离线地图中，请稍后重试</td>
+</tr>
+<tr>
+<td>325012</td>
+<td>当前飞机未连接，请稍后重试</td>
+</tr>
+<tr>
+<td>326002</td>
+<td>飞行器未安装 DJI Cellualr 模块</td>
+</tr>
+<tr>
+<td>326003</td>
+<td>飞行器 DJI Cellualr 模块中未安装 SIM 卡</td>
+</tr>
+<tr>
+<td>326004</td>
+<td>飞行器 DJI Cellualr 模块需要强制升级，否则无法使用</td>
+</tr>
+<tr>
+<td>326005</td>
+<td>操作失败，增强图传无法建立连接，请检查 4G 信号强度，或咨询运营商查询套餐流量和 APN 设置</td>
+</tr>
+<tr>
+<td>326006</td>
+<td>增强图传开关切换失败，请稍后重试</td>
+</tr>
+<tr>
+<td>326008</td>
+<td>机场未安装 DJI Cellualr 模块</td>
+</tr>
+<tr>
+<td>326009</td>
+<td>机场 DJI Cellualr 模块中未安装 SIM 卡</td>
+</tr>
+<tr>
+<td>326010</td>
+<td>机场 DJI Cellualr 模块需要强制升级，否则无法使用</td>
+</tr>
+<tr>
+<td>326103</td>
+<td>当前 eSIM 正在激活中，请稍后再试</td>
+</tr>
+<tr>
+<td>326104</td>
+<td>当前 eSIM 正在切换运营商中，请稍后再试</td>
+</tr>
+<tr>
+<td>326105</td>
+<td>DJI 增强图传模块正在切换模式中，请稍后再试</td>
+</tr>
+<tr>
+<td>326106</td>
+<td>DJI 增强图传模块异常，请重启设备后再试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>326107</td>
+<td>请在设备管理 &gt; 机场 &gt; 设备运维中激活DJI增强图传模块的 eSIM 或插入 SIM 卡后再试</td>
+</tr>
+<tr>
+<td>327000</td>
+<td>参数设置失败，请稍后重试</td>
+</tr>
+<tr>
+<td>327001</td>
+<td>参数设置失败，请稍后重试</td>
+</tr>
+<tr>
+<td>327002</td>
+<td>获取控制权失败，请稍后重试</td>
+</tr>
+<tr>
+<td>327003</td>
+<td>获取控制权失败，请稍后重试</td>
+</tr>
+<tr>
+<td>327004</td>
+<td>画面拖动失败，请重试</td>
+</tr>
+<tr>
+<td>327005</td>
+<td>双击画面归中失败</td>
+</tr>
+<tr>
+<td>327006</td>
+<td>拍照失败</td>
+</tr>
+<tr>
+<td>327007</td>
+<td>开始录像失败</td>
+</tr>
+<tr>
+<td>327008</td>
+<td>停止录像失败</td>
+</tr>
+<tr>
+<td>327009</td>
+<td>切换相机模式失败</td>
+</tr>
+<tr>
+<td>327010</td>
+<td>ZOOM相机变焦失败</td>
+</tr>
+<tr>
+<td>327011</td>
+<td>IR相机变焦失败</td>
+</tr>
+<tr>
+<td>327012</td>
+<td>获取控制权失败，请稍后重试</td>
+</tr>
+<tr>
+<td>327013</td>
+<td>参数设置失败，请稍后重试</td>
+</tr>
+<tr>
+<td>327014</td>
+<td>云台已达限位</td>
+</tr>
+<tr>
+<td>327015</td>
+<td>直播启动失败，建议刷新直播或重新打开设备小窗</td>
+</tr>
+<tr>
+<td>327016</td>
+<td>失联动作设置失败，请重试</td>
+</tr>
+<tr>
+<td>327017</td>
+<td>指点飞行高度设置失败，请重试</td>
+</tr>
+<tr>
+<td>327018</td>
+<td>指点飞行模式切换失败，请重试</td>
+</tr>
+<tr>
+<td>327019</td>
+<td>当前状态无法看向标注点</td>
+</tr>
+<tr>
+<td>327020</td>
+<td>全景拍照停止命令超时</td>
+</tr>
+<tr>
+<td>327022</td>
+<td>全景拍照停止在当前状态不支持</td>
+</tr>
+<tr>
+<td>327050</td>
+<td>当前设备状态不支持播放音频</td>
+</tr>
+<tr>
+<td>327051</td>
+<td>下载音频文件失败</td>
+</tr>
+<tr>
+<td>327052</td>
+<td>喊话器处理模式切换失败</td>
+</tr>
+<tr>
+<td>327053</td>
+<td>上传音频文件失败</td>
+</tr>
+<tr>
+<td>327054</td>
+<td>播放音频失败</td>
+</tr>
+<tr>
+<td>327055</td>
+<td>设置工作模式失败</td>
+</tr>
+<tr>
+<td>327056</td>
+<td>上传文本失败</td>
+</tr>
+<tr>
+<td>327057</td>
+<td>停止播放失败</td>
+</tr>
+<tr>
+<td>327058</td>
+<td>设置播放模式失败</td>
+</tr>
+<tr>
+<td>327059</td>
+<td>设置音量失败</td>
+</tr>
+<tr>
+<td>327060</td>
+<td>设置控件值失败</td>
+</tr>
+<tr>
+<td>327061</td>
+<td>发送文本值失败</td>
+</tr>
+<tr>
+<td>327062</td>
+<td>切换系统语言失败</td>
+</tr>
+<tr>
+<td>327063</td>
+<td>获取设备功能列表失败</td>
+</tr>
+<tr>
+<td>327064</td>
+<td>获取设备配置文件失败</td>
+</tr>
+<tr>
+<td>327065</td>
+<td>获取设备图片文件失败</td>
+</tr>
+<tr>
+<td>327066</td>
+<td>设备文件压缩失败</td>
+</tr>
+<tr>
+<td>327067</td>
+<td>设备文件上传失败</td>
+</tr>
+<tr>
+<td>327068</td>
+<td>上传音频文件失败，md5校验失败</td>
+</tr>
+<tr>
+<td>327069</td>
+<td>上传音频文件失败</td>
+</tr>
+<tr>
+<td>327070</td>
+<td>上传音频文件失败，异常终止</td>
+</tr>
+<tr>
+<td>327071</td>
+<td>上传TTS文本失败，md5校验失败</td>
+</tr>
+<tr>
+<td>327072</td>
+<td>上传TTS文本失败</td>
+</tr>
+<tr>
+<td>327073</td>
+<td>上传TTS文本失败，异常终止</td>
+</tr>
+<tr>
+<td>327074</td>
+<td>喊话器重播失败</td>
+</tr>
+<tr>
+<td>327075</td>
+<td>喊话器编码失败</td>
+</tr>
+<tr>
+<td>327201</td>
+<td>全景拍照失败</td>
+</tr>
+<tr>
+<td>327202</td>
+<td>全景拍摄终止</td>
+</tr>
+<tr>
+<td>327203</td>
+<td>当前设备不支持全景拍照</td>
+</tr>
+<tr>
+<td>327204</td>
+<td>系统繁忙，无法全景拍照</td>
+</tr>
+<tr>
+<td>327205</td>
+<td>请求失败，无法全景拍照</td>
+</tr>
+<tr>
+<td>327206</td>
+<td>飞机未起飞，无法开始全景拍摄</td>
+</tr>
+<tr>
+<td>327207</td>
+<td>控制权获取失败，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327208</td>
+<td>未知相机错误，无法开始全景拍摄</td>
+</tr>
+<tr>
+<td>327209</td>
+<td>相机超时，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327210</td>
+<td>无法全景拍照</td>
+</tr>
+<tr>
+<td>327211</td>
+<td>存储空间不足，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327212</td>
+<td>飞机运动中，无法开始全景拍摄</td>
+</tr>
+<tr>
+<td>327213</td>
+<td>云台运动中，无法开始全景拍摄</td>
+</tr>
+<tr>
+<td>327214</td>
+<td>用户操作摇杆，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327215</td>
+<td>碰到限飞区，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327216</td>
+<td>触发距离限制，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327217</td>
+<td>云台受阻，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327218</td>
+<td>拍照失败，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327219</td>
+<td>全景图片拼接失败</td>
+</tr>
+<tr>
+<td>327220</td>
+<td>加载标定参数失败，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327221</td>
+<td>调整相机参数失败，全景拍摄终止</td>
+</tr>
+<tr>
+<td>327500</td>
+<td>飞行器镜头除雾失败，请稍后重试</td>
+</tr>
+<tr>
+<td>328051</td>
+<td>飞机未完成实名登记，请连接遥控器，按照指引完成、实名登记后飞行</td>
+</tr>
+<tr>
+<td>328052</td>
+<td>飞机实名登记状态已注销，请连接遥控器，按照指引完成实名登记后飞行</td>
+</tr>
+<tr>
+<td>336000</td>
+<td>指点飞行命令发送失败，请重试</td>
+</tr>
+<tr>
+<td>336001</td>
+<td>飞行器数据异常，无法响应指令</td>
+</tr>
+<tr>
+<td>336002</td>
+<td>飞行器GPS信号差</td>
+</tr>
+<tr>
+<td>336003</td>
+<td>飞行器定位失效，无法响应指令</td>
+</tr>
+<tr>
+<td>336004</td>
+<td>指点飞行自主规划失败</td>
+</tr>
+<tr>
+<td>336005</td>
+<td>飞行器返航点未更新</td>
+</tr>
+<tr>
+<td>336006</td>
+<td>飞行器已失联，已退出指点飞行</td>
+</tr>
+<tr>
+<td>336017</td>
+<td>飞行器电量不足以完成当前任务</td>
+</tr>
+<tr>
+<td>336018</td>
+<td>已切换飞行器规划模式</td>
+</tr>
+<tr>
+<td>336019</td>
+<td>指点飞行因限高自动调整飞行高度</td>
+</tr>
+<tr>
+<td>336513</td>
+<td>目标点在禁飞区内</td>
+</tr>
+<tr>
+<td>336514</td>
+<td>目标点超出飞行器限远</td>
+</tr>
+<tr>
+<td>336515</td>
+<td>目标点在禁飞区内</td>
+</tr>
+<tr>
+<td>336516</td>
+<td>目标点超出飞行器限高</td>
+</tr>
+<tr>
+<td>336517</td>
+<td>目标点超出飞行器限低</td>
+</tr>
+<tr>
+<td>337025</td>
+<td>飞行器无法起飞</td>
+</tr>
+<tr>
+<td>337026</td>
+<td>目标点异常，请重试</td>
+</tr>
+<tr>
+<td>337027</td>
+<td>飞行器速度设置异常，请重试</td>
+</tr>
+<tr>
+<td>337028</td>
+<td>飞行器版本异常，请检查飞行器版本</td>
+</tr>
+<tr>
+<td>337029</td>
+<td>飞行器无法响应当前任务，请稍后重试</td>
+</tr>
+<tr>
+<td>337030</td>
+<td>指令飞行安全离场高过低</td>
+</tr>
+<tr>
+<td>337537</td>
+<td>已触碰禁飞区</td>
+</tr>
+<tr>
+<td>337538</td>
+<td>已触碰飞行器限远</td>
+</tr>
+<tr>
+<td>337539</td>
+<td>已触碰禁飞区</td>
+</tr>
+<tr>
+<td>337540</td>
+<td>已触碰飞行器限高或限高区</td>
+</tr>
+<tr>
+<td>337541</td>
+<td>已触碰飞行器限低</td>
+</tr>
+<tr>
+<td>337542</td>
+<td>飞行器起飞失败，请重试</td>
+</tr>
+<tr>
+<td>337543</td>
+<td>目标点可能在障碍物内，请检查周边环境</td>
+</tr>
+<tr>
+<td>337544</td>
+<td>检测到障碍物，请检查周边环境</td>
+</tr>
+<tr>
+<td>337545</td>
+<td>飞行器规划异常，请重试</td>
+</tr>
+<tr>
+<td>337546</td>
+<td>已触碰自定义飞行区边界</td>
+</tr>
+<tr>
+<td>338001</td>
+<td>飞行器通信异常，无法执行飞行任务，请重启飞行器与机场后重试</td>
+</tr>
+<tr>
+<td>338002</td>
+<td>飞行器通信异常，无法执行飞行任务，请重启飞行器与机场后重试</td>
+</tr>
+<tr>
+<td>338003</td>
+<td>飞行器通信异常，无法执行飞行任务，请重启飞行器与机场后重试</td>
+</tr>
+<tr>
+<td>338004</td>
+<td>飞行器通信异常，无法执行飞行任务，请重启飞行器与机场后重试</td>
+</tr>
+<tr>
+<td>338005</td>
+<td>起飞机场与降落机场部署距离超出限制，无法执行飞行任务，请选择两个部署距离不超过 15km 的机场执行任务</td>
+</tr>
+<tr>
+<td>338006</td>
+<td>无法执行飞行任务，请检查降落机场是否已申请解禁证书、是否位于自定义禁飞区或是否位于自定义飞行区外</td>
+</tr>
+<tr>
+<td>338007</td>
+<td>目标降落机场部署突破限高区限高，无法执行任务，请申请解禁证书后再试</td>
+</tr>
+<tr>
+<td>338008</td>
+<td>目标降落机场部署突破飞行器设置的限高，无法执行任务，请调整限高后重试</td>
+</tr>
+<tr>
+<td>338009</td>
+<td>飞行器 GPS 定位信号差，无法执行任务，请重启飞行器后重试</td>
+</tr>
+<tr>
+<td>338010</td>
+<td>飞行器定位失效，无法执行任务，请重启飞行器后重试</td>
+</tr>
+<tr>
+<td>338011</td>
+<td>任务失败，目标机场处于地理鸟笼作业区域外，请重新规划任务后再试</td>
+</tr>
+<tr>
+<td>338017</td>
+<td>飞行器数据更新失败，无法执行任务，请重启飞行器后重试</td>
+</tr>
+<tr>
+<td>338018</td>
+<td>飞行器数据更新失败，无法执行任务，请重启飞行器后重试</td>
+</tr>
+<tr>
+<td>338019</td>
+<td>飞行器到目标机场的返航路线正在规划中，无法执行任务，请重启飞行器后重试</td>
+</tr>
+<tr>
+<td>338020</td>
+<td>飞行器无法根据规划的路径到达目标降落机场，无法执行任务，请重新选择降落机场后再试</td>
+</tr>
+<tr>
+<td>338021</td>
+<td>飞行器当前电量不足以到达目标降落机场，无法执行任务，请给飞行器充电后重试</td>
+</tr>
+<tr>
+<td>338049</td>
+<td>响应遥控器杆量，已退出指点飞行</td>
+</tr>
+<tr>
+<td>338050</td>
+<td>响应终止指令，已退出指点飞行</td>
+</tr>
+<tr>
+<td>338051</td>
+<td>飞行器低电量返航，已退出指点飞行</td>
+</tr>
+<tr>
+<td>338052</td>
+<td>飞行器低电量降落，已退出指点飞行</td>
+</tr>
+<tr>
+<td>338053</td>
+<td>附近有载人机，已退出指点飞行</td>
+</tr>
+<tr>
+<td>338054</td>
+<td>响应其他高优先级任务，已退出指点飞行</td>
+</tr>
+<tr>
+<td>338255</td>
+<td>飞行器通信异常，无法执行飞行任务，请重启飞行器与机场后重试</td>
+</tr>
+<tr>
+<td>341002</td>
+<td>机场位置未收敛，请等待机场位置收敛后再试</td>
+</tr>
+<tr>
+<td>386535</td>
+<td>航线执行异常，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>513002</td>
+<td>直播失败，相机不存在或相机类型错误</td>
+</tr>
+<tr>
+<td>513003</td>
+<td>相机已经在直播中，请勿重复开启直播</td>
+</tr>
+<tr>
+<td>513005</td>
+<td>直播失败，直播参数（清晰度）设置错误</td>
+</tr>
+<tr>
+<td>513006</td>
+<td>直播启动失败，请刷新重试</td>
+</tr>
+<tr>
+<td>513008</td>
+<td>直播失败，设备端图传数据异常</td>
+</tr>
+<tr>
+<td>513010</td>
+<td>直播失败，设备无法联网</td>
+</tr>
+<tr>
+<td>513011</td>
+<td>操作失败，设备未开启直播</td>
+</tr>
+<tr>
+<td>513012</td>
+<td>操作失败，设备已在直播中，不支持切换镜头</td>
+</tr>
+<tr>
+<td>513013</td>
+<td>直播失败，直播使用的视频传输协议不支持</td>
+</tr>
+<tr>
+<td>513014</td>
+<td>直播失败，直播参数错误或者不完整</td>
+</tr>
+<tr>
+<td>513015</td>
+<td>直播异常，网络卡顿, 请刷新后重试</td>
+</tr>
+<tr>
+<td>513016</td>
+<td>直播异常，视频解码失败</td>
+</tr>
+<tr>
+<td>513017</td>
+<td>直播已暂停，请等待当前飞行器媒体文件下载完成后再试</td>
+</tr>
+<tr>
+<td>513099</td>
+<td>直播失败，请稍后重试</td>
+</tr>
+<tr>
+<td>514100</td>
+<td>机场运行异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514101</td>
+<td>推杆闭合失败，请检查停机坪上是否存在异物，飞行器方向是否放反，或重启机场后重试</td>
+</tr>
+<tr>
+<td>514102</td>
+<td>推杆展开失败，请检查停机坪上是否存在异物，或重启机场后重试</td>
+</tr>
+<tr>
+<td>514103</td>
+<td>飞行器电量低于30%，无法执行飞行任务，请充电后重试（建议电量≥50%）</td>
+</tr>
+<tr>
+<td>514104</td>
+<td>飞行器电池开始充电失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514105</td>
+<td>飞行器电池停止充电失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514106</td>
+<td>飞行器电源控制异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514107</td>
+<td>舱盖开启失败，请检查舱盖周围是否存在异物，或重启机场后重试</td>
+</tr>
+<tr>
+<td>514108</td>
+<td>舱盖关闭失败，请检查舱盖周围是否存在异物，或重启机场后重试</td>
+</tr>
+<tr>
+<td>514109</td>
+<td>飞行器开机失败，请检查飞行器是否在舱和飞机电量是否正常，或重启机场后重试</td>
+</tr>
+<tr>
+<td>514110</td>
+<td>飞行器关机失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514111</td>
+<td>飞行器慢转收桨控制异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514112</td>
+<td>飞行器慢转收桨控制异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514113</td>
+<td>机场推杆与飞行器无法连接，请检查飞行器是否在舱内，推杆闭合时是否被卡住，充电连接器是否脏污或损坏</td>
+</tr>
+<tr>
+<td>514114</td>
+<td>获取飞行器电源状态失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514116</td>
+<td>无法执行当前操作，机场正在执行其他控制指令，请稍后重试</td>
+</tr>
+<tr>
+<td>514117</td>
+<td>舱盖开启或关闭未到位，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514118</td>
+<td>推杆展开或闭合未到位，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514120</td>
+<td>机场与飞行器断连，请重启机场后重试或重新对频</td>
+</tr>
+<tr>
+<td>514121</td>
+<td>机场急停按钮被按下，请释放急停按钮</td>
+</tr>
+<tr>
+<td>514122</td>
+<td>获取飞行器充电状态失败，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514123</td>
+<td>飞行器电池电量过低无法开机</td>
+</tr>
+<tr>
+<td>514124</td>
+<td>获取飞行器电池信息失败，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514125</td>
+<td>飞行器电池电量已接近满电状态，无法开始充电，请使用至95%以下再进行充电</td>
+</tr>
+<tr>
+<td>514134</td>
+<td>雨量过大，机场无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>514135</td>
+<td>风速过大，机场无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>514136</td>
+<td>机场供电断开，机场无法执行飞行任务，请恢复机场供电后重试</td>
+</tr>
+<tr>
+<td>514137</td>
+<td>环境温度过低于-20℃ (-4°F)，机场无法执行飞行任务，请稍后重试</td>
+</tr>
+<tr>
+<td>514138</td>
+<td>飞行器电池正在保养中，机场无法执行飞行任务，请等待保养结束后重试</td>
+</tr>
+<tr>
+<td>514139</td>
+<td>飞行器电池无法执行保养指令，飞行器电池无需保养</td>
+</tr>
+<tr>
+<td>514140</td>
+<td>飞行器电池无法执行保养指令，飞行器电池无需保养</td>
+</tr>
+<tr>
+<td>514141</td>
+<td>机场系统运行异常，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514142</td>
+<td>飞行器起飞前，机场推杆与飞行器无法连接，请检查飞行器是否在舱内，推杆闭合时是否被卡住，充电连接器是否脏污或损坏</td>
+</tr>
+<tr>
+<td>514143</td>
+<td>推杆未闭合或闭合不到位，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>514144</td>
+<td>舱盖未关闭或关闭不到位，请稍后重试或重启机场后重试</td>
+</tr>
+<tr>
+<td>514145</td>
+<td>机场处于现场调试中，无法执行当前操作或执行飞行任务，请断开遥控器和机场的数据线连接后重试</td>
+</tr>
+<tr>
+<td>514146</td>
+<td>机场处于远程调试中，无法执行飞行任务，请退出远程调试后重试</td>
+</tr>
+<tr>
+<td>514147</td>
+<td>设备升级中，无法进行远程调试或执行飞行任务，请等待升级完成后重试</td>
+</tr>
+<tr>
+<td>514148</td>
+<td>机场已经在作业中，无法进行远程调试或再次执行飞行任务，请等待当前任务执行完成后重试</td>
+</tr>
+<tr>
+<td>514149</td>
+<td>机场系统运行异常，无法执行飞行任务，请重启机场后重试</td>
+</tr>
+<tr>
+<td>514150</td>
+<td>设备重启中，无法执行飞行任务，请等待重启完成后重试</td>
+</tr>
+<tr>
+<td>514151</td>
+<td>设备升级中，无法执行设备重启指令，请等待升级完成后重试</td>
+</tr>
+<tr>
+<td>514153</td>
+<td>机场已退出远程调试模式，无法执行当前操作</td>
+</tr>
+<tr>
+<td>514154</td>
+<td>获取内循环出风口温度失败，请稍后再试</td>
+</tr>
+<tr>
+<td>514155</td>
+<td>飞机不在舱内，无法执行飞行任务，请将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>514156</td>
+<td>飞机不在舱内，请立即检查飞行器是否已安全降落并将飞行器放回至机场</td>
+</tr>
+<tr>
+<td>514157</td>
+<td>执行开机失败，无线充电线圈业务繁忙，请重启机场后再试复</td>
+</tr>
+<tr>
+<td>514158</td>
+<td>无法起飞，机场 RTK 业务异常，请重启机场后再试</td>
+</tr>
+<tr>
+<td>514159</td>
+<td>任务失败，降落机场检测到飞行器，请确保降落机场没有飞行器后再试</td>
+</tr>
+<tr>
+<td>514162</td>
+<td>飞行器和机场连接失败，请关闭机场舱盖或重启机场后再试</td>
+</tr>
+<tr>
+<td>514163</td>
+<td>电池功能异常，请确保飞行器电池插入到位或重启飞行器后再试</td>
+</tr>
+<tr>
+<td>514164</td>
+<td>设备重启失败，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>514165</td>
+<td>设备重启失败，请稍后重试，如果仍报错请联系大疆售后</td>
+</tr>
+<tr>
+<td>514170</td>
+<td>机场系统初始化中，无法执行当前操作或指令，请等待机场系统初始化完成后重试</td>
+</tr>
+<tr>
+<td>514171</td>
+<td>云端下发给机场的命令不符合格式要求，机场无法执行</td>
+</tr>
+<tr>
+<td>514172</td>
+<td>飞行器无法关机，蓝牙连接状态为未连接，请尝试重启飞行器和机场，或去现场重新对频飞行器与机场后再试</td>
+</tr>
+<tr>
+<td>514173</td>
+<td>由于天气原因（环境温度低于5度并且降雨大于等于中雨），可能导致桨叶结冰影响作业安全，暂无法执行任务</td>
+</tr>
+<tr>
+<td>514174</td>
+<td>飞行器充电失败，机场舱盖开启或关闭未到位，请关闭舱盖后再试</td>
+</tr>
+<tr>
+<td>514180</td>
+<td>停止空调制冷或停止空调制热失败，请稍后重试</td>
+</tr>
+<tr>
+<td>514181</td>
+<td>开启空调制冷失败，请稍后重试</td>
+</tr>
+<tr>
+<td>514182</td>
+<td>开启空调制热失败，请稍后重试</td>
+</tr>
+<tr>
+<td>514183</td>
+<td>开启空调除湿失败，请稍后重试</td>
+</tr>
+<tr>
+<td>514184</td>
+<td>当前温度低于 0 ℃（32°F），无法开启空调制冷</td>
+</tr>
+<tr>
+<td>514185</td>
+<td>当前温度高于 45 ℃（115°F），无法开启空调制热</td>
+</tr>
+<tr>
+<td>514300</td>
+<td>网关异常</td>
+</tr>
+<tr>
+<td>514301</td>
+<td>请求超时，连接断开</td>
+</tr>
+<tr>
+<td>514302</td>
+<td>网络证书异常，连接失败</td>
+</tr>
+<tr>
+<td>514303</td>
+<td>网络异常，连接断开</td>
+</tr>
+<tr>
+<td>514304</td>
+<td>请求被拒，连接失败</td>
+</tr>
+<tr>
+<td>514168</td>
+<td>机场未标定，机场无法执行飞行任务，请标定机场</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      本站点为 DJI 上云 API 官方文档的社区镜像，仅供学习与交流使用。<br>
+内容版权归 DJI 大疆创新所有，如有侵权请联系删除。
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/huneng-dev/dji-cloud-api-docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
