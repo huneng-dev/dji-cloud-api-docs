@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock1/live
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock1/live -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html#service) Service
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html#%E5%BC%80%E5%A7%8B%E7%9B%B4%E6%92%AD) 开始直播

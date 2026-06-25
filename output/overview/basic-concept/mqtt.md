@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/mqtt.html
-path: overview/basic-concept/mqtt
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/mqtt.html -->
+<!-- path: overview/basic-concept/mqtt -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/mqtt.html#mqtt-%E7%AE%80%E4%BB%8B) MQTT 简介
 DJI上云API部分接口采用了物联网通用的MQTT5.0协议标准，具体的MQTT5.0协议详细介绍可以参考链接：[MQTT5.0open in new window](http://mqtt.p2hp.com/mqtt-5-0)

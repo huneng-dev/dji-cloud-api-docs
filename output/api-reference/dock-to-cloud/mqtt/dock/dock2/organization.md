@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/organization.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/organization
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/organization.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/organization -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/organization.html#requests) Requests
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/organization.html#%E8%8E%B7%E5%8F%96%E8%AE%BE%E5%A4%87%E7%BB%91%E5%AE%9A%E4%BF%A1%E6%81%AF) 获取设备绑定信息

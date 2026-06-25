@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/ai-target-recognition.html
-path: feature-set/dock-feature-set/ai-target-recognition
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/ai-target-recognition.html -->
+<!-- path: feature-set/dock-feature-set/ai-target-recognition -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/ai-target-recognition.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 大疆机场3支持AI识别功能，开启 AI 识别功能后，直播画面将实时显示识别到的目标。 算法支持人、车、船识别。 开启 AI 识别后，飞机的直播码流会在视频帧内携带 SEI（Supplemental Enhancement Information） 元数据。业务侧需要在拉流端解析 SEI，获取实时识别结果，并在直播画面叠加显示或做业务处理。 SEI 属于 H.264/H.265 码流中的帧对齐元数据，能够与视频内容严格对齐。

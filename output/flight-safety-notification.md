@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/flight-safety-notification.html
-path: flight-safety-notification
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/flight-safety-notification.html -->
+<!-- path: flight-safety-notification -->
 
 ###  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/flight-safety-notification.html#%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91) 关键功能开发
 为保障您享受到完整的飞行器和大疆机场的维保服务，并获得飞行器事故分析与定责支持，DJI 强烈建议您在使用“上云 API”开发云端功能时，确保完成以下关键功能的开发：

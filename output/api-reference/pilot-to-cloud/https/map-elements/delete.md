@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/delete.html
-path: api-reference/pilot-to-cloud/https/map-elements/delete
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/delete.html -->
+<!-- path: api-reference/pilot-to-cloud/https/map-elements/delete -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/delete.html#%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0) 删除元素
 `DELETE /map/api/v1/workspaces/{workspace_id}/elements/{id}`

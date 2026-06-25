@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-map-elements.html
-path: feature-set/pilot-feature-set/pilot-map-elements
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-map-elements.html -->
+<!-- path: feature-set/pilot-feature-set/pilot-map-elements -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-map-elements.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 地图元素功能集主要是把DJI Pilot 2地图界面上的点线面及观察记录元素可以同步到云服务端，最终实现指挥官在web页面画点线面标记，可以实时同步给Pilot端的飞手，这样实现实时的战术指挥。当然，飞手看到可疑目标，也可以在DJI Pilot 2的地图上打点或画线面，另外，飞手飞行过程中的轨迹，观测记录等信息也会实时同步给Web端。

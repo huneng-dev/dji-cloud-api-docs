@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/psdk.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock1/psdk
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/psdk.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock1/psdk -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/psdk.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/psdk.html#psdk-ui%E8%B5%84%E6%BA%90%E5%8C%85%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C%E4%B8%8A%E6%8A%A5) psdk-ui资源包上传结果上报

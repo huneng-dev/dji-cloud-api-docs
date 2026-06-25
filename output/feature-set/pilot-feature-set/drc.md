@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/drc.html
-path: feature-set/pilot-feature-set/drc
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/drc.html -->
+<!-- path: feature-set/pilot-feature-set/drc -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/drc.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 Pilot 上云开放远程控制功能，云端可以通过 Pilot 转发数据，远程操控飞行器。

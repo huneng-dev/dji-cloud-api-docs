@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/index.html
-path: index
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/index.html -->
+<!-- path: index -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/#%E5%85%B3%E4%BA%8Edji-cloud-api-demo-%E7%BB%88%E6%AD%A2%E7%BB%B4%E6%8A%A4%E5%85%AC%E5%91%8A) 关于DJI Cloud API Demo 终止维护公告
 ###  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/#%E5%8F%91%E5%B8%83%E6%97%A5%E6%9C%9F-2025%E5%B9%B44%E6%9C%8810%E6%97%A5) 发布日期：2025年4月10日

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/drc.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock3/drc
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/drc.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock3/drc -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/drc.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/drc.html#%E9%81%BF%E9%9A%9C%E8%AE%B0%E5%BD%95%E4%B8%8A%E6%8A%A5%E4%BA%8B%E4%BB%B6%E9%80%9A%E7%9F%A5) 避障记录上报事件通知

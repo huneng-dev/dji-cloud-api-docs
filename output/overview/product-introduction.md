@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-introduction.html
-path: overview/product-introduction
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-introduction.html -->
+<!-- path: overview/product-introduction -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-introduction.html#%E6%A6%82%E8%BF%B0) 概述
 目前对于 DJI 无人机接入第三方云平台，主要是基于 MSDK 开发定制 App，然后自己定义私有上云通信协议连接到云平台中。这样对于核心业务是开发云平台，无人机只是其中一个接入硬件设备的开发者来说，重新基于 MSDK 开发 App 工作量大、成本高，同时还需要花很多精力在无人机功能接口适配上，从而导致整体的方案开发进度较为缓慢。

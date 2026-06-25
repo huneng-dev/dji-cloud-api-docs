@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html
-path: overview/product-support
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html -->
+<!-- path: overview/product-support -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-support.html#%E6%9C%BA%E5%9E%8B%E6%94%AF%E6%8C%81) 机型支持
 > **注意：**

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pull-pilot-log.html
-path: feature-set/pilot-feature-set/pull-pilot-log
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pull-pilot-log.html -->
+<!-- path: feature-set/pilot-feature-set/pull-pilot-log -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pull-pilot-log.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 对于使用DJI Pilot 2过程中，难免会出现接口通信异常，功能失效不通等问题，需要拉取Pilot2 的log日志查看进行诊断（具体可参考[Pilot 日志导出open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/debug/log-export.html)）。为了解决该问题，DJI Pilot 2也提供了JSBridge接口给开发者进行log日志拉取，并通过webview上传到开发者自己的服务器进行分析。

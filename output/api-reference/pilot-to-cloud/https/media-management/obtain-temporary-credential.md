@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential.html
-path: api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential.html -->
+<!-- path: api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/obtain-temporary-credential.html#%E7%94%9F%E6%88%90%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E4%B8%B4%E6%97%B6%E5%87%AD%E8%AF%81) 生成上传文件临时凭证
 `POST /storage/api/v1/workspaces/{workspace_id}/sts`

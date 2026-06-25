@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list.html
-path: api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list.html -->
+<!-- path: api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/situation-awareness/obtain-device-topology-list.html#%E8%8E%B7%E5%8F%96%E8%AE%BE%E5%A4%87%E6%8B%93%E6%89%91%E5%88%97%E8%A1%A8) 获取设备拓扑列表
 PILOT在首次上线后，会发送http请求去获取同一个工作空间下的所有设备列表及其拓扑，服务端需要把整个设备列表发给PILOT。同时，当接收到websocket指令通知设备online/offline/update的时候，也是需要调用该接口进行请求设备拓扑列表进行更新。

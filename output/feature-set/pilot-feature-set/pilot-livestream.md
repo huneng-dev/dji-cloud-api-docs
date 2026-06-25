@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-livestream.html
-path: feature-set/pilot-feature-set/pilot-livestream
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-livestream.html -->
+<!-- path: feature-set/pilot-feature-set/pilot-livestream -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-livestream.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 直播功能主要是把无人机相机负载和大疆机场的视频码流发给第三方云平台进行播放，用户可以方便的在远程web页面点击直播。

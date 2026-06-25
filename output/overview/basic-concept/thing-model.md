@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/thing-model.html
-path: overview/basic-concept/thing-model
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/thing-model.html -->
+<!-- path: overview/basic-concept/thing-model -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/thing-model.html#%E6%A6%82%E8%BF%B0) 概述
 物模型指将物理空间中的实体数字化，并在云端构建该实体的数据模型。在物联网平台中，定义物模型即定义产品功能，完成功能定义后，系统将自动生成该产品的物模型。

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/create.html
-path: api-reference/pilot-to-cloud/https/map-elements/create
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/create.html -->
+<!-- path: api-reference/pilot-to-cloud/https/map-elements/create -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/create.html#%E5%88%9B%E5%BB%BA%E5%85%83%E7%B4%A0) 创建元素
 `POST /map/api/v1/workspaces/{workspace_id}/element-groups/{group_id}/elements`

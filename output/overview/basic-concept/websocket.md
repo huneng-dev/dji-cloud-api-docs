@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/websocket.html
-path: overview/basic-concept/websocket
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/websocket.html -->
+<!-- path: overview/basic-concept/websocket -->
 
 对于某些功能集，需要用到Websocket通信，所以需要DJI Pilot 2和服务端建立一条Websocket通道。当DJI Pilot 2通过Webview登录上线的时候，服务端需要应答Websocket的URL地址给DJI Pilot 2，然后DJI Pilot 2会再进行Websocket连接请求。
 具体的通用消息推送接口协议格式如下：

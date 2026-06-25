@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/firmware-upgrade.html
-path: feature-set/dock-feature-set/firmware-upgrade
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/firmware-upgrade.html -->
+<!-- path: feature-set/dock-feature-set/firmware-upgrade -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/firmware-upgrade.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 为实现对设备固件版本的维护，上云API 支持用户通过云端对机场与飞行器进行固件升级。用户可以实施单次升级以及批量升级、升级提示、升级进度的展示等。

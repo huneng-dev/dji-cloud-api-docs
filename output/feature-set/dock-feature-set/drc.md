@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/drc.html
-path: feature-set/dock-feature-set/drc
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/drc.html -->
+<!-- path: feature-set/dock-feature-set/drc -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/drc.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 指令飞行功能的开放目的是解决无人机与机场在远程控制过程中，无法即时性操作的限制。在实际应用场景中，飞行器可以从空闲状态响应或暂停正在执行的航线任务。开发者通过手动方式继续控制设备或负载。通过指令飞行功能，开发者可以获得安全可靠的飞行器控制、高实时性的指令下发与直播画面传输、osd 信息上报以及对负载的控制能力。

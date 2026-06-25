@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/update.html
-path: api-reference/pilot-to-cloud/https/map-elements/update
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/update.html -->
+<!-- path: api-reference/pilot-to-cloud/https/map-elements/update -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/update.html#%E6%9B%B4%E6%96%B0%E5%85%83%E7%B4%A0) 更新元素
 `PUT /map/api/v1/workspaces/{workspace_id}/elements/{id}`

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/wayline.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock1/wayline
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/wayline.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock1/wayline -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/wayline.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/wayline.html#%E6%9C%BA%E5%9C%BA%E4%BB%BB%E5%8A%A1%E5%87%86%E5%A4%87%E5%BC%82%E5%B8%B8%E9%80%9A%E7%9F%A5) 机场任务准备异常通知

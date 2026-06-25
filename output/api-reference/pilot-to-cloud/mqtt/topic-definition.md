@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/topic-definition.html
-path: api-reference/pilot-to-cloud/mqtt/topic-definition
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/topic-definition.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/topic-definition -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/topic-definition.html#topic-%E6%80%BB%E8%A7%88) Topic 总览
 为了方便设备云平台区分不同属性的处理策略，将设备上报物模型属性分为 osd 和 state 两类，分别用不同的 topic 上报。

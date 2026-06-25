@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/aircraft/properties.html
-path: api-reference/pilot-to-cloud/mqtt/others/aircraft/properties
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/aircraft/properties.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/others/aircraft/properties -->
 
 ###  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/aircraft/properties.html#%E8%AE%BE%E5%A4%87%E5%B1%9E%E6%80%A7%E5%88%97%E8%A1%A8) 设备属性列表
   * pushMode：

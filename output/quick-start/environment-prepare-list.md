@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/environment-prepare-list.html
-path: quick-start/environment-prepare-list
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/environment-prepare-list.html -->
+<!-- path: quick-start/environment-prepare-list -->
 
 整个上云 API Demo 例程采用前后端分离的设计，前端采用的是 TS+Vue3 框架，后端采用的是 JAVA 语言（必须**11** 及以上的版本，否则后端代码无法编译），Spring Boot 框架。使用该例程，用户需要预先学习熟悉以下知识：
   * **前端**

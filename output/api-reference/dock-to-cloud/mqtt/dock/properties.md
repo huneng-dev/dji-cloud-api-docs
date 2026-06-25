@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/properties.html
-path: api-reference/dock-to-cloud/mqtt/dock/properties
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/properties.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/properties -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/properties.html#property) Property
   * pushMode：

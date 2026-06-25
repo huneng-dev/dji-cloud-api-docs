@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-wayline-management.html
-path: feature-set/dock-feature-set/dock-wayline-management
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-wayline-management.html -->
+<!-- path: feature-set/dock-feature-set/dock-wayline-management -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-wayline-management.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 航线管理是无人机自主作业的重要功能，可以实现行业领域的批量化、智能化作业。上云 API 提供了相关的接口，实现了航线任务在云端的共享查看、下发执行、取消以及进度上报等功能。用户需要遵照[航线文件格式规范（WPML）open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/overview.html)编写航线文件，定义航线任务。一个航线任务中可以定义多条航线。

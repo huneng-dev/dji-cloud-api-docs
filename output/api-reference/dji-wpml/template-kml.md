@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/template-kml.html
-path: api-reference/dji-wpml/template-kml
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/template-kml.html -->
+<!-- path: api-reference/dji-wpml/template-kml -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/template-kml.html#%E6%96%87%E4%BB%B6%E4%BB%8B%E7%BB%8D) 文件介绍
 `template.kml`是模板文件，可以被 DJI Pilot 2、DJI Flighthub 2 或者其它软件解析，生成最终提供给无人机执行的路径和动作，即`waylines.wpml`文件。`template.kml`文件由三部分组成：

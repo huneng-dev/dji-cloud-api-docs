@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/jsbridge.html
-path: api-reference/pilot-to-cloud/jsbridge
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/jsbridge.html -->
+<!-- path: api-reference/pilot-to-cloud/jsbridge -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/jsbridge.html#%E6%A6%82%E8%BF%B0) 概述
 DJI Pilot 2内嵌的Webview中的H5页面需要开发者自定义设计开发，然后页面的数据和信息是通过JSBridge与DJI Pilot 2进行通信，具体可以通信的JSBridge接口如下：  

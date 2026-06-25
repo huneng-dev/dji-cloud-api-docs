@@ -54,10 +54,9 @@ def clean_markdown(md: str, url: str) -> str:
     if rel_path.endswith(".html"):
         rel_path = rel_path[:-5]
 
-    cleaned.append(f"---")
-    cleaned.append(f"source: {url}")
-    cleaned.append(f"path: {rel_path}")
-    cleaned.append(f"---")
+    # 用 HTML 注释保留元数据，避免渲染到页面
+    cleaned.append(f"<!-- source: {url} -->")
+    cleaned.append(f"<!-- path: {rel_path} -->")
     cleaned.append("")
 
     skip_nav = False

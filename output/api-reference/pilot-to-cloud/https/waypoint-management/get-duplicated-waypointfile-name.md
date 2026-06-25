@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name.html
-path: api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name.html -->
+<!-- path: api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/get-duplicated-waypointfile-name.html#%E8%8E%B7%E5%8F%96%E9%87%8D%E5%A4%8D%E7%9A%84%E8%88%AA%E7%BA%BF%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0) 获取重复的航线文件名称
 `GET /wayline/api/v1/workspaces/:workspace_id/waylines/duplicate-names`

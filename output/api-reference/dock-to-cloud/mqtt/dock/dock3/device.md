@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/device.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock3/device
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/device.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock3/device -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/device.html#status) Status
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/device.html#%E8%AE%BE%E5%A4%87%E6%8B%93%E6%89%91%E6%9B%B4%E6%96%B0) 设备拓扑更新

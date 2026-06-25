@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/live.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/live
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/live.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/live -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/live.html#service) Service
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/live.html#%E7%9B%B4%E6%92%AD%E7%9B%B8%E6%9C%BA%E5%88%87%E6%8D%A2) 直播相机切换

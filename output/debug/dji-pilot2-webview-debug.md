@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/debug/dji-pilot2-webview-debug.html
-path: debug/dji-pilot2-webview-debug
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/debug/dji-pilot2-webview-debug.html -->
+<!-- path: debug/dji-pilot2-webview-debug -->
 
 目前DJI Pilot 2内嵌的webview页面调试方式有2种。
   1. 使用chrome devtools工具。

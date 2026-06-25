@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/docker-deployment-steps.html
-path: quick-start/docker-deployment-steps
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/docker-deployment-steps.html -->
+<!-- path: quick-start/docker-deployment-steps -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/docker-deployment-steps.html#docker-%E5%AE%89%E8%A3%85) Docker 安装
   * 安装教程：<https://docs.docker.com/engine/install/ubuntu/>[open in new window](https://docs.docker.com/engine/install/ubuntu/)

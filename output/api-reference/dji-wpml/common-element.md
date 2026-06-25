@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/common-element.html
-path: api-reference/dji-wpml/common-element
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/common-element.html -->
+<!-- path: api-reference/dji-wpml/common-element -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/common-element.html#%E4%BF%A1%E6%81%AF%E8%AF%B4%E6%98%8E) 信息说明
 WPML 航线文件的字段介绍如下：

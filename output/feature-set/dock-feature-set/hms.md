@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/hms.html
-path: feature-set/dock-feature-set/hms
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/hms.html -->
+<!-- path: feature-set/dock-feature-set/hms -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/hms.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 上云API 开放HMS功能是为了设备的问题能在云端显示，提升用户对于风险的感知和处理能力，以保障作业安全。

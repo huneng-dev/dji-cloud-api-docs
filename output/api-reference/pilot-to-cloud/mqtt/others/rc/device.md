@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/device.html
-path: api-reference/pilot-to-cloud/mqtt/others/rc/device
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/device.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/others/rc/device -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/device.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/device.html#%E8%AE%BE%E5%A4%87%E6%8B%93%E6%89%91%E6%9B%B4%E6%96%B0) 设备拓扑更新

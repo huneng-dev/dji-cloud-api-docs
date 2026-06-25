@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/source-code-deployment-steps.html
-path: quick-start/source-code-deployment-steps
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/source-code-deployment-steps.html -->
+<!-- path: quick-start/source-code-deployment-steps -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/source-code-deployment-steps.html#%E6%B3%A8%E5%86%8C%E6%88%90%E4%B8%BAdji%E5%BC%80%E5%8F%91%E8%80%85) 注册成为DJI开发者
 您可以点击[这里open in new window](https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US)注册成为DJI开发者。

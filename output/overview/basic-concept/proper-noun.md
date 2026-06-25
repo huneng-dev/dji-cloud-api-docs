@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/proper-noun.html
-path: overview/basic-concept/proper-noun
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/proper-noun.html -->
+<!-- path: overview/basic-concept/proper-noun -->
 
 | 名词  | 解释  |  
 | --- | --- |  

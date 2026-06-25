@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control.html
-path: api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/remote-control.html#%E9%A3%9E%E8%A1%8C%E5%99%A8%E7%8A%B6%E6%80%81%E4%BF%A1%E6%81%AF%E4%B8%8A%E6%8A%A5) 飞行器状态信息上报

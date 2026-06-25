@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list.html
-path: api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list.html -->
+<!-- path: api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/obtain-waypointfile-list.html#%E8%8E%B7%E5%8F%96%E8%88%AA%E7%BA%BF%E5%88%97%E8%A1%A8) 获取航线列表
 `GET /wayline/api/v1/workspaces/{workspace_id}/waylines`

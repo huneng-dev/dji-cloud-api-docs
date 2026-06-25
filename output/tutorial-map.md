@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/tutorial-map.html
-path: tutorial-map
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/tutorial-map.html -->
+<!-- path: tutorial-map -->
 
 在开始您的阅读前，请先查看本节，了解当前教程文档的结构与内容、获得阅读指引。
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/tutorial-map.html#%E9%98%85%E8%AF%BB%E5%85%AC%E5%91%8A) 阅读公告

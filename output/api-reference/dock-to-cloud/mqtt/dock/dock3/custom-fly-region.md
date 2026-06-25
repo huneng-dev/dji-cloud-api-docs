@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/custom-fly-region.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A3%9E%E8%A1%8C%E5%8C%BA%E5%91%8A%E8%AD%A6%E4%BF%A1%E6%81%AF%E6%8E%A8%E9%80%81) 自定义飞行区告警信息推送

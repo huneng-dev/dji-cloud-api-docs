@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-device-management.html
-path: feature-set/dock-feature-set/dock-device-management
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-device-management.html -->
+<!-- path: feature-set/dock-feature-set/dock-device-management -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-device-management.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 设备管理功能支持设备向云端上报拓扑信息、推送设备属性、以及云端对设备的属性进行设置。让用户可以在云端查看以及调整设备状态，更为方便地展开工作。

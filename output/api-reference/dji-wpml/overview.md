@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/overview.html
-path: api-reference/dji-wpml/overview
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/overview.html -->
+<!-- path: api-reference/dji-wpml/overview -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/overview.html#%E8%83%8C%E6%99%AF) 背景
 航线飞行功能作为无人机自动化作业场景的重要技术承载，是用户和开发者最重视的核心功能之一。随着无人机自动化作业的普及，航线数据也迅速成为用户和开发者的重要数字资产。然而在过去很长的一段时间里，航线仅能在单一设备上编辑、执行，跨设备跨机型应用困难重重。航线文件格式不公开、不共享，用户难以独立完成二次编辑、业务调优的工作。本着为行业和用户解放重复生产力的愿景，引领无人机行业向自动化新纪元迈进，推动航线数据资产化，我们正式对外发布航线文件格式标准——WPML。

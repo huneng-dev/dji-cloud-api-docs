@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/wayline.html
-path: api-reference/dock-to-cloud/mqtt/dock/wayline
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/wayline.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/wayline -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/wayline.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/wayline.html#%E8%AE%BE%E5%A4%87%E8%BF%94%E8%88%AA%E9%80%80%E5%87%BA%E7%8A%B6%E6%80%81%E9%80%9A%E7%9F%A5) 设备返航退出状态通知

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/cmd.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/cmd
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/cmd.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/cmd -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/cmd.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/cmd.html#%E5%BC%BA%E5%88%B6%E5%85%B3%E8%88%B1%E7%9B%96%E8%BF%9B%E5%BA%A6) 强制关舱盖进度

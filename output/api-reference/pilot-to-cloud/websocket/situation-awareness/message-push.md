@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/websocket/situation-awareness/message-push.html
-path: api-reference/pilot-to-cloud/websocket/situation-awareness/message-push
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/websocket/situation-awareness/message-push.html -->
+<!-- path: api-reference/pilot-to-cloud/websocket/situation-awareness/message-push -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/websocket/situation-awareness/message-push.html#message-deviceosd) Message `deviceOsd`
 `设备遥感信息`

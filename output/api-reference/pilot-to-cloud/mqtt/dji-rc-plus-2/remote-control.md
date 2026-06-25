@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control.html
-path: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/dji-rc-plus-2/remote-control.html#%E6%91%84%E5%83%8F%E5%A4%B4-osd-%E6%8E%A8%E9%80%81) 摄像头 osd 推送

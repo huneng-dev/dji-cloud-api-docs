@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/remote-control.html#%E6%8B%8D%E7%85%A7%E4%BF%A1%E6%81%AF%E4%B8%8A%E6%8A%A5) 拍照信息上报

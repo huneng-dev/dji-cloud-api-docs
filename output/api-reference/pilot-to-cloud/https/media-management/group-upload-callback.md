@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/group-upload-callback.html
-path: api-reference/pilot-to-cloud/https/media-management/group-upload-callback
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/group-upload-callback.html -->
+<!-- path: api-reference/pilot-to-cloud/https/media-management/group-upload-callback -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/group-upload-callback.html#%E6%96%87%E4%BB%B6%E7%BB%84%E4%B8%8A%E4%BC%A0%E5%AE%8C%E6%88%90%E5%90%8E%E5%9B%9E%E8%B0%83) 文件组上传完成后回调
 `POST /media/api/v1/workspaces/{workspace_id}/group-upload-callback`

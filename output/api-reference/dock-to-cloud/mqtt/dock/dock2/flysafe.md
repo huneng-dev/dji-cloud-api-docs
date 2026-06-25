@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe.html#service) Service
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/flysafe.html#%E5%90%AF%E7%94%A8-%E7%A6%81%E7%94%A8%E8%AE%BE%E5%A4%87%E7%9A%84%E5%8D%95%E4%B8%AA%E8%A7%A3%E7%A6%81%E8%AF%81%E4%B9%A6) 启用/禁用设备的单个解禁证书

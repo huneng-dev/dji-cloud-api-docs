@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/error-code.html
-path: error-code
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/error-code.html -->
+<!-- path: error-code -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/error-code.html#%E9%94%99%E8%AF%AF%E7%A0%81%E8%AF%B4%E6%98%8E) 错误码说明
   1. 整体而言，错误码为 “ABCDEF” 格式，A 说明上报来源，BC 说明功能模块，DEF 为模块自定义错误。

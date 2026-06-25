@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/custom-flight-area.html
-path: feature-set/dock-feature-set/custom-flight-area
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/custom-flight-area.html -->
+<!-- path: feature-set/dock-feature-set/custom-flight-area -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/custom-flight-area.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 上云 API 开放自定义飞行区功能。用户可以将敏感地点设定为禁飞区，并将这些信息同步给项目内的大疆机场。当无人机执行任务时，它会自动绕行禁飞区，从而确保作业的安全和规范性。本功能通过自定义飞行区文件圈定飞行器的飞行区域，**点击下载[自定义飞行区文件协议模板open in new window](https://terra-1-g.djicdn.com/fee90c2e03e04e8da67ea6f56365fc76/SDK%20%E6%96%87%E6%A1%A3/CloudAPI/custom-flight-area-file-template.json)**。

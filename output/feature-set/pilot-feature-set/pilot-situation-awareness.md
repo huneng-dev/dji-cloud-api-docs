@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-situation-awareness.html
-path: feature-set/pilot-feature-set/pilot-situation-awareness
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-situation-awareness.html -->
+<!-- path: feature-set/pilot-feature-set/pilot-situation-awareness -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-situation-awareness.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 态势感知功能主要是服务端可以推送设备（飞机/遥控器）坐标信息给到 Pilot 端， Pilot 会把推送过来的信息显示在地图中。这样就可以实现把同一个工作空间下的所有设备之间信息形成一张网，不止web端可以看到，飞手端也可以看到，从而有效的促进所有设备间的态势信息分享与沟通。

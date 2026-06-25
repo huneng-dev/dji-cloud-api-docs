@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/psdk.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock3/psdk
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/psdk.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock3/psdk -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/psdk.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-tts%E6%92%AD%E6%94%BE%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5) 喊话器-tts播放进度通知

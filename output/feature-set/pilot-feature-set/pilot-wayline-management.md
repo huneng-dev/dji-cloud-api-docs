@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-wayline-management.html
-path: feature-set/pilot-feature-set/pilot-wayline-management
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-wayline-management.html -->
+<!-- path: feature-set/pilot-feature-set/pilot-wayline-management -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-wayline-management.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 航线管理功能主要是提供同一个工作空间下的航线文件下载上传的能力，当用户通过DJI Pilot 2登录到服务端之后，可以拉取航线列表，并显示在DJI Pilot 2的航线库中，DJI Pilot 2中可以直接预览云端存在的航线，但是当用户需要编辑航线的时候，需要把航线下载到DJI Pilot 2本地进行编辑，本地编辑的内容不影响云端的航线，如果编辑后的航线需要共享，则需要重命名一个新航线，再发起上传的动作。此处要注意，如果从服务端拉取航线到DJI Pilot 2本地进行编辑，那么编辑之后保存的航线为新的航线，需要对新航线进行重命名，不然会出现传输失败的情况。

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/cmd.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock3/cmd
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/cmd.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock3/cmd -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/cmd.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/cmd.html#esim-%E7%9A%84%E8%BF%90%E8%90%A5%E5%95%86%E5%88%87%E6%8D%A2%E8%BF%9B%E5%BA%A6) eSIM 的运营商切换进度

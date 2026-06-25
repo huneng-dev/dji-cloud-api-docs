@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch.html
-path: api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch.html -->
+<!-- path: api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/collect-waypointfile-in-batch.html#%E6%89%B9%E9%87%8F%E6%94%B6%E8%97%8F%E8%88%AA%E7%BA%BF%E6%96%87%E4%BB%B6) 批量收藏航线文件
 `POST /wayline/api/v1/workspaces/{workspace_id}/favorites`

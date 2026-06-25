@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-log.html
-path: feature-set/dock-feature-set/remote-log
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-log.html -->
+<!-- path: feature-set/dock-feature-set/remote-log -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-log.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 为了解决机场日志与飞行器日志对人工手动获取的依赖，上云API 开放了远程日志功能，希望能够减少机场问题的人力投入、缩短问题反馈的流程、并且提升问题处理的效率。远程日志支持机场日志与飞行器日志的上传。云端服务器向设备请求获取日志文件列表，设备响应并上传列表。

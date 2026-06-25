@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-architecture.html
-path: overview/product-architecture
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/product-architecture.html -->
+<!-- path: overview/product-architecture -->
 
 ![](https://terra-1-g.djicdn.com/84f990b0bbd145e6a3930de0c55d3b2b/admin/doc/077db3ca-9a39-4884-b813-8496ac58769f.png)   
 产品架构图

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/firmware.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/firmware
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/firmware.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/firmware -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/firmware.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/firmware.html#%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7%E8%BF%9B%E5%BA%A6) 固件升级进度

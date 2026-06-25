@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/drc.html
-path: api-reference/pilot-to-cloud/mqtt/rc-pro/drc
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/drc.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/rc-pro/drc -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/drc.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/rc-pro/drc.html#%E8%AF%B7%E6%B1%82%E6%8E%88%E6%9D%83%E7%BB%93%E6%9E%9C%E9%80%9A%E7%9F%A5) 请求授权结果通知

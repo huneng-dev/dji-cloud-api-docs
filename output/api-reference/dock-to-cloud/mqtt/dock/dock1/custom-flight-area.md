@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/custom-flight-area.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock1/custom-flight-area
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/custom-flight-area.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock1/custom-flight-area -->
 
   1. 自定义飞行区文件名需满足以下要求：geofence_{fileMD5}.json。其中 fileMD5 为文件 MD5 值的占位。  
   2. 点击下载自定义飞行区模板文件：[自定义飞行区文件协议模板open in new window](https://terra-1-g.djicdn.com/fee90c2e03e04e8da67ea6f56365fc76/SDK%20%E6%96%87%E6%A1%A3/CloudAPI/custom-flight-area-file-template.json)

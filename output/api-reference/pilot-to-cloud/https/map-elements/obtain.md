@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/obtain.html
-path: api-reference/pilot-to-cloud/https/map-elements/obtain
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/obtain.html -->
+<!-- path: api-reference/pilot-to-cloud/https/map-elements/obtain -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/map-elements/obtain.html#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E5%88%97%E8%A1%A8) 获取元素列表
 PILOT在首次上线后，会发送http请求去获取地图元素列表，服务端需要把共享的地图元素列表发给PILOT。同时，当接收到websocket指令进行图层刷新的时候，也是需要调用该接口进行请求地图元素列表。

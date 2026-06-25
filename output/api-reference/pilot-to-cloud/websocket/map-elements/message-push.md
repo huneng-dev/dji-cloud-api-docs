@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/websocket/map-elements/message-push.html
-path: api-reference/pilot-to-cloud/websocket/map-elements/message-push
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/websocket/map-elements/message-push.html -->
+<!-- path: api-reference/pilot-to-cloud/websocket/map-elements/message-push -->
 
 ####  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/websocket/map-elements/message-push.html#message-mapelementcreate) Message `mapElementCreate`
 `创建地图元素`

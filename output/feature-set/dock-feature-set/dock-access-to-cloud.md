@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-access-to-cloud.html
-path: feature-set/dock-feature-set/dock-access-to-cloud
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-access-to-cloud.html -->
+<!-- path: feature-set/dock-feature-set/dock-access-to-cloud -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-access-to-cloud.html#%E6%A6%82%E8%BF%B0) 概述
 机场上云需要借助遥控器内安装的 DJI Pilot 2。如下图示，开发者可按照 Pilot 内的指示一步步操作完成上云。在上云过程中，需要完成设备的检查（如急停按钮的检查、网络是否已经连接等）、将飞行器与机场对频、填写上云配置信息（如填写 MQTT 账号密码以实现 MQTT 连接）等操作。通过 Demo 中的机场上云部分，可以获得机场上云操作的演示，演示视频请查看 [功能预览视频open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/function-display-video.html) 中的机场上云。

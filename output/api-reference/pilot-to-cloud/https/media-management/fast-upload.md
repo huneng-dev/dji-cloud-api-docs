@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/fast-upload.html
-path: api-reference/pilot-to-cloud/https/media-management/fast-upload
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/fast-upload.html -->
+<!-- path: api-reference/pilot-to-cloud/https/media-management/fast-upload -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/fast-upload.html#%E6%96%87%E4%BB%B6%E5%BF%AB%E4%BC%A0) 文件快传
 `POST /media/api/v1/workspaces/{workspace_id}/fast-upload`

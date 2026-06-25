@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/multi-dock.html
-path: feature-set/dock-feature-set/multi-dock
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/multi-dock.html -->
+<!-- path: feature-set/dock-feature-set/multi-dock -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/multi-dock.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 大疆机场 2 和大疆机场 3 支持用户下发蛙跳任务，通过任务执行指令配置任务的起飞机场和降落机场，以支持飞行器在不同的机场间起降。

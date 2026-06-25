@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/aircraft/m30-properties.html
-path: api-reference/dock-to-cloud/mqtt/aircraft/m30-properties
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/aircraft/m30-properties.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/aircraft/m30-properties -->
 
 ###  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/aircraft/m30-properties.html#%E8%AE%BE%E5%A4%87%E5%B1%9E%E6%80%A7%E5%88%97%E8%A1%A8) 设备属性列表
   * pushMode：

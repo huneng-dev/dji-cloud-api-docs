@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report.html
-path: api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report.html -->
+<!-- path: api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/waypointfile-upload-result-report.html#%E4%B8%8A%E6%8A%A5%E8%88%AA%E7%BA%BF%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C) 上报航线文件上传结果
 `POST /wayline/api/v1/workspaces/{workspace_id}/upload-callback`

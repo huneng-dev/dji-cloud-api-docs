@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect.html
-path: api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect.html -->
+<!-- path: api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/waypoint-management/cancel-collect.html#%E6%89%B9%E9%87%8F%E5%8F%96%E6%B6%88%E6%94%B6%E8%97%8F%E8%88%AA%E7%BA%BF%E6%96%87%E4%BB%B6) 批量取消收藏航线文件
 `DELETE /wayline/api/v1/workspaces/{workspace_id}/favorites`

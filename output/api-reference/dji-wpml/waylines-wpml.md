@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/waylines-wpml.html
-path: api-reference/dji-wpml/waylines-wpml
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/waylines-wpml.html -->
+<!-- path: api-reference/dji-wpml/waylines-wpml -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dji-wpml/waylines-wpml.html#%E6%96%87%E4%BB%B6%E4%BB%8B%E7%BB%8D) 文件介绍
 `waylines.wpml`是飞机直接执行的文件，它定义了明确的无人机飞行和负载动作指令，这些指令由 DJI Pilot 2、DJI Flighthub 2 或者其它软件生成，也可被开发者直接编辑开发。`waylines.wpml`文件由两部分组成：

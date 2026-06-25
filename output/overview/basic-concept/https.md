@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/https.html
-path: overview/basic-concept/https
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/https.html -->
+<!-- path: overview/basic-concept/https -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/https.html#%E6%A6%82%E8%BF%B0) 概述
 上云API中除了使用MQTT协议外，有部分功能还需要通过http/https短连接方式和服务器进行通信。由于三方业务应用多种场景，需要基于DJI Pilot 2开放一定的结合业务的自由度，因此DJI Pilot 2内嵌一个Webview组件，该组件可以通过配置https请求URL链接，直接访问第三方云平台的H5网页，在该网页中注册登录开发者自定义的账号密码之后，可以换取Token、MQTT网关地址等信息，Webview组件拿到这些信息之后，通过JSBridge接口传给DJI Pilot 2 应用层和DJI Pilot 2设备层，应用层加上Token进行应用业务通信，设备层则进行MQTT认证连接。

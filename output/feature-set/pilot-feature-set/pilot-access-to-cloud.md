@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-access-to-cloud.html
-path: feature-set/pilot-feature-set/pilot-access-to-cloud
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-access-to-cloud.html -->
+<!-- path: feature-set/pilot-feature-set/pilot-access-to-cloud -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/pilot-feature-set/pilot-access-to-cloud.html#%E5%88%9B%E5%BB%BA%E4%B8%8A%E4%BA%91api%E5%BA%94%E7%94%A8%E7%A4%BA%E4%BE%8B) 创建上云API应用示例
 在使用上云API的接口之前，需要在大疆开发者网站中先注册成为开发者，注册完成后，即可创建“上云API”应用，以及可以拿到API交互所需的APP ID、APP 秘钥、APP License，后续在JSBridge交互中，需要先校验这三个参数，如果DJI Pilot 2校验License错误，则无法完成DJI Pilot 2上云的后续动作。Pilot 上云前需要完成License证书校验，API JSBridge:`platformVerifyLicense`。

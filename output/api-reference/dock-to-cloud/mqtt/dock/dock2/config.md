@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/config.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/config
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/config.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/config -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/config.html#requests) Requests
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/config.html#%E8%8E%B7%E5%8F%96%E9%85%8D%E7%BD%AE) 获取配置

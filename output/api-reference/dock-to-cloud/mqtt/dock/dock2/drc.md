@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/drc.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock2/drc
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/drc.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock2/drc -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/drc.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/drc.html#flyto-%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C%E4%BA%8B%E4%BB%B6%E9%80%9A%E7%9F%A5) flyto 执行结果事件通知

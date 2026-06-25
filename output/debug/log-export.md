@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/debug/log-export.html
-path: debug/log-export
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/debug/log-export.html -->
+<!-- path: debug/log-export -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/debug/log-export.html#%E6%A6%82%E8%BF%B0) 概述
 当在调试上云 API 时，难免会遇到一些棘手的 BUG 需要 DJI 提供技术支持，此时一般需要开发者帮忙导出飞机、遥控器、DJI Pilot 2、大疆机场的 log 日志，以便 DJI 技术支持同学快速定位问题。

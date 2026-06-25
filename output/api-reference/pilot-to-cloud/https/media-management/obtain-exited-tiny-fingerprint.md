@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint.html
-path: api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint.html -->
+<!-- path: api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/https/media-management/obtain-exited-tiny-fingerprint.html#%E8%8E%B7%E5%8F%96%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%E7%B2%BE%E7%AE%80%E6%8C%87%E7%BA%B9) 获取已经存在的文件夹精简指纹
 `POST /media/api/v1/workspaces/{workspace_id}/files/tiny-fingerprints`

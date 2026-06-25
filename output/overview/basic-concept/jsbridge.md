@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/jsbridge.html
-path: overview/basic-concept/jsbridge
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/jsbridge.html -->
+<!-- path: overview/basic-concept/jsbridge -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/overview/basic-concept/jsbridge.html#%E6%A6%82%E8%BF%B0) 概述
 目前大部分的移动端应用开发都选择混合开发模式（Hybrid)，通常会涉及到两大类技术：原生Native、Web H5。

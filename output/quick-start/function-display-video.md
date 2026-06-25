@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/function-display-video.html
-path: quick-start/function-display-video
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/function-display-video.html -->
+<!-- path: quick-start/function-display-video -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/function-display-video.html#pilot-%E4%B8%8A%E4%BA%91) Pilot 上云
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/quick-start/function-display-video.html#%E6%9C%BA%E5%9C%BA%E4%B8%8A%E4%BA%91) 机场上云

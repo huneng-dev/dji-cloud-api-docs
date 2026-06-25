@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control.html
-path: api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control.html -->
+<!-- path: api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control.html#event) Event
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock3/remote-control.html#psdk%E2%80%94%E6%B5%AE%E7%AA%97%E6%8E%A8%E9%80%81) PSDK—浮窗推送

@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/live.html
-path: api-reference/pilot-to-cloud/mqtt/others/rc/live
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/live.html -->
+<!-- path: api-reference/pilot-to-cloud/mqtt/others/rc/live -->
 
 #  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/live.html#service) Service
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/pilot-to-cloud/mqtt/others/rc/live.html#%E8%AE%BE%E7%BD%AE%E7%9B%B4%E6%92%AD%E9%95%9C%E5%A4%B4) 设置直播镜头

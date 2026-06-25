@@ -1,7 +1,5 @@
----
-source: https://developer.dji.com/doc/cloud-api-tutorial/cn/faq.html
-path: faq
----
+<!-- source: https://developer.dji.com/doc/cloud-api-tutorial/cn/faq.html -->
+<!-- path: faq -->
 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/faq.html#%E5%A6%82%E4%BD%95%E5%9C%A8%E8%88%AA%E7%BA%BF%E9%A3%9E%E8%A1%8C%E4%BB%BB%E5%8A%A1%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E7%96%86%E6%9C%BA%E5%9C%BA-2-%E5%92%8C%E5%A4%A7%E7%96%86%E6%9C%BA%E5%9C%BA-3-%E7%9A%84%E5%AE%9A%E5%90%91%E6%8B%8D%E7%85%A7) 如何在航线飞行任务中使用大疆机场 2 和大疆机场 3 的定向拍照？
 定向拍照 `orientedShoot` 相比原来的精准拍照 `accurateShoot` 机型兼容性更好，执行效率更高。如需把航线文件中的精准拍照转变成定向拍照，需执行以下步骤：
