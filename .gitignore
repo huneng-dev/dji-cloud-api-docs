@@ -1,0 +1,32 @@
+# Python 虚拟环境
+.venv/
+venv/
+env/
+
+# MkDocs 构建输出
+site/
+
+# OpenCode / OMO 本地状态
+.codegraph/
+.omo/
+
+# 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 环境变量
+.env
+.env.local

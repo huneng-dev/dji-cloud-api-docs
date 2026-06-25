@@ -1,0 +1,527 @@
+---
+source: https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html
+path: api-reference/dock-to-cloud/mqtt/dock/psdk
+---
+
+#  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#event) Event
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#psdk-ui%E8%B5%84%E6%BA%90%E5%8C%85%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C%E4%B8%8A%E6%8A%A5) psdk-ui资源包上传结果上报
+**Topic:** thing/product/_{gateway_sn}_ /events
+**Direction:** up
+**Method:** psdk_ui_resource_upload_result
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0,"max":3,"step":1}  |   |  
+| object_key  | oss 对象  | text  |   |   |  
+| size  | 文件大小  | int  | {"unit":"字节 / B"}  |   |  
+| result  | 错误码  | int  |   |   |  
+**Example:**
+```
+{
+	"method": "psdk_ui_resource_upload_result",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689911315621,
+	"gateway": "4TADKAQ000002J",
+	"data": {
+		"object_key": "f4a4a171-bb33-45d6-bd3d-b10034f66734/1581F5BLD22BE00A090U_2023_07_21_11_48_33_widget",
+		"psdk_index": 2,
+		"result": 0,
+		"size": 43488
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#psdk-%E6%B5%AE%E7%AA%97%E6%96%87%E6%9C%AC%E6%8E%A8%E9%80%81) psdk-浮窗文本推送
+**Topic:** thing/product/_{gateway_sn}_ /events
+**Direction:** up
+**Method:** psdk_floating_window_text
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0,"max":3,"step":1}  |   |  
+| value  | 浮窗内容  | text  |   |   |  
+**Example:**
+```
+{
+	"method": "psdk_floating_window_text",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689911744380,
+	"gateway": "4TADKAQ000002J",
+	"data": {
+		"psdk_index": 2,
+		"value": "System time : 1193683 ms"
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E9%9F%B3%E9%A2%91%E6%92%AD%E6%94%BE%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5) 喊话器-音频播放进度通知
+**Topic:** thing/product/_{gateway_sn}_ /events
+**Direction:** up
+**Method:** speaker_audio_play_start_progress
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+| output  | 输出  | struct  |   |   |  
+| »psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+| »status  | 当前所处阶段  | enum_string  | {"in_progress":"处理中","ok":"播放成功"}  |   |  
+| »md5  | 文件内容的md5校验和, 用作机场唯一标识  | text  |   |   |  
+| »progress  | 进度  | struct  |   |   |  
+| »»percent  | 进度百分比  | int  | {"max":"100","min":"0","step":"1","unit":"百分比 / %"}  |   |  
+| »»step_key  | 当前步骤  | enum_string  | {"change_work_mode":"切换工作模式","download":"从云端下载音频文件到机场","encoding":"编码pcm为opus","upload":"机场上传音频到psdk","play":"开始播放"}  |   |  
+**Example:**
+```
+{
+	"method": "speaker_audio_play_start_progress",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689868551258,
+	"gateway": "4TADKAQ000002J",
+	"data": {
+		"output": {
+			"md5": "e0ecd29bb44d9e08107aaccecdc6cae2",
+			"progress": {
+				"percent": 89,
+				"step_key": "upload"
+			},
+			"psdk_index": 2,
+			"status": "in_progress"
+		},
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-tts%E6%92%AD%E6%94%BE%E8%BF%9B%E5%BA%A6%E9%80%9A%E7%9F%A5) 喊话器-tts播放进度通知
+**Topic:** thing/product/_{gateway_sn}_ /events
+**Direction:** up
+**Method:** speaker_tts_play_start_progress
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+| output  | 输出  | struct  |   |   |  
+| »psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+| »status  | 当前所处阶段  | enum_string  | {"in_progress":"处理中","ok":"播放成功"}  |   |  
+| »md5  | 文件内容的md5校验和, 用作机场唯一标识  | text  |   |   |  
+| »progress  | 进度  | struct  |   |   |  
+| »»percent  | 进度百分比  | int  | {"max":"100","min":"0","step":"1","unit":"百分比 / %"}  |   |  
+| »»step_key  | 当前步骤  | enum_string  | {"change_work_mode":"切换工作模式","upload":"机场上传音频到psdk","play":"开始播放"}  |   |  
+**Example:**
+```
+{
+	"method": "speaker_tts_play_start_progress",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689911352309,
+	"gateway": "4TADKAQ000002J",
+	"data": {
+		"output": {
+			"md5": "bacee8ed225fa346f6da87f67c914728",
+			"progress": {
+				"percent": 100,
+				"step_key": "play"
+			},
+			"psdk_index": 2,
+			"status": "success"
+		},
+		"result": 0
+	}
+}
+```
+#  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#service) Service
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#psdk-%E8%AE%BE%E7%BD%AE%E6%8E%A7%E4%BB%B6%E5%80%BC) psdk-设置控件值
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** psdk_widget_value_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+| index  | 控件编号  | int  | {"min":0,"step":1}  |   |  
+| value  | 控件值  | int  | {}  | 开关、进度等控件值由开发者自行定义  |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689740550047,
+	"method": "psdk_widget_value_set",
+	"data": {
+		"psdk_index": 2,
+		"index": 1,
+		"value": 60
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** psdk_widget_value_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#psdk-%E5%8F%91%E9%80%81%E6%96%87%E6%9C%AC%E6%A1%86%E5%86%85%E5%AE%B9) psdk-发送文本框内容
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** psdk_input_box_text_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+| value  | 文本内容  | text  | {"length":128,"unit":"字节 / B"}  |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689740550047,
+	"method": "psdk_input_box_text_set",
+	"data": {
+		"psdk_index": 2,
+		"value": "hello world"
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** psdk_input_box_text_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E5%BC%80%E5%A7%8B%E6%92%AD%E6%94%BE%E9%9F%B3%E9%A2%91) 喊话器-开始播放音频
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** speaker_audio_play_start
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+| file  | 音频文件  | struct  |   |   |  
+| »name  | 文件名  | text  | {}  |   |  
+| »url  | 文件下载链接  | text  | {}  |   |  
+| »md5  | 音频文件的md5校验和, 用作机场唯一标识  | text  |   |   |  
+| »format  | 喊话器输入文件格式  | enum_string  | {"pcm":"pcm 格式"}  |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689912303287,
+	"method": "speaker_audio_play_start",
+	"data": {
+		"file": {
+			"format": "pcm",
+			"md5": "b38257017001f45ec064b5157b2e4416",
+			"name": "20230720162718",
+			"url": "https://example.com/5a6f9d4b-2a38-4b4b-86f9-3a678da0bf4a/3dd27366-bf21-41a7-9f07-62b74f2e93a7/fe2f2474-720a-4122-a552-010e1ed08920/20230720162718.webm.pcm"
+		},
+		"psdk_index": 2
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** speaker_audio_play_start
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E5%BC%80%E5%A7%8B%E6%92%AD%E6%94%BEtts%E6%96%87%E6%9C%AC) 喊话器-开始播放TTS文本
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** speaker_tts_play_start
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+| tts  | tts 文本  | struct  |   |   |  
+| »name  | 文件名  | text  | {}  |   |  
+| »text  | 文本内容  | text  | {}  |   |  
+| »md5  | 文件内容的md5校验和, 用作机场唯一标识  | text  |   |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689860575397,
+	"method": "speaker_tts_play_start",
+	"data": {
+		"psdk_index": 2,
+		"tts": {
+			"md5": "0bfb9bceee974f41a6ddfd81521bd795",
+			"name": "1111",
+			"text": "1111"
+		}
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** speaker_tts_play_start
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E9%87%8D%E6%96%B0%E6%92%AD%E6%94%BE) 喊话器-重新播放
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** speaker_replay
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689748764875,
+	"method": "speaker_replay",
+	"data": {
+		"psdk_index": 2
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** speaker_replay
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E5%81%9C%E6%AD%A2%E6%92%AD%E6%94%BE) 喊话器-停止播放
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** speaker_play_stop
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0}  |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689748815503,
+	"method": "speaker_play_stop",
+	"data": {
+		"psdk_index": 2
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** speaker_play_stop
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E8%AE%BE%E7%BD%AE%E6%92%AD%E6%94%BE%E6%A8%A1%E5%BC%8F) 喊话器-设置播放模式
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** speaker_play_mode_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0,"max":3,"step":1}  |   |  
+| play_mode  | 喊话器播放模式  | enum_int  | {"0":"单次播放","1":"循环播放(单曲)"}  |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689842974113,
+	"method": "speaker_play_mode_set",
+	"data": {
+		"play_mode": 1,
+		"psdk_index": 2
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** speaker_play_mode_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E5%96%8A%E8%AF%9D%E5%99%A8-%E8%AE%BE%E7%BD%AE%E9%9F%B3%E9%87%8F) 喊话器-设置音量
+**Topic:** thing/product/_{gateway_sn}_ /services
+**Direction:** down
+**Method:** speaker_play_volume_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| psdk_index  | psdk 负载设备索引  | int  | {"min":0,"max":3,"step":1}  |   |  
+| play_volume  | 喊话器音量  | int  | {"min":0,"max":100,"step":1}  |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689842989237,
+	"method": "speaker_play_volume_set",
+	"data": {
+		"play_volume": 13,
+		"psdk_index": 2
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /services_reply
+**Direction:** up
+**Method:** speaker_play_volume_set
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| result  | 返回码  | int  |   |   |  
+**Example:**
+```
+{
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+	"timestamp:": 1654070968655,
+	"data": {
+		"result": 0
+	}
+}
+```
+#  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#requests) Requests
+##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/psdk.html#%E8%8E%B7%E5%8F%96%E4%B8%8A%E4%BC%A0%E4%B8%B4%E6%97%B6%E5%87%AD%E8%AF%81) 获取上传临时凭证
+**Topic:** thing/product/_{gateway_sn}_ /requests
+**Direction:** up
+**Method:** storage_config_get
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| module  | 模块枚举值  | enum_int  | {"0":"媒体","1":"psdk ui 资源"}  |   |  
+**Example:**
+```
+{
+	"method": "storage_config_get",
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"timestamp": 1689911314560,
+	"gateway": "4TADKAQ000002J",
+	"data": {
+		"module": 1
+	}
+}
+```
+**Topic:** thing/product/_{gateway_sn}_ /requests_reply
+**Direction:** down
+**Method:** storage_config_get
+**Data:**  
+| Column  | Name  | Type  | constraint  | Description  |  
+| --- | --- | --- | --- | --- |  
+| bucket  | 对象存储桶名称  | text  |   |   |  
+| credentials  | 凭证信息  | struct  |   |   |  
+| »access_key_id  | 访问密钥 ID  | text  |   |   |  
+| »access_key_secret  | 秘密访问密钥  | text  |   |   |  
+| »expire  | 访问密钥过期时间  | int  | {"step":"1","unit":"秒 / s"}  |   |  
+| »security_token  | 会话凭证  | text  |   |   |  
+| endpoint  | 对外服务的访问域名  | text  |   |   |  
+| provider  | 云厂商枚举值  | enum_string  | {"ali":"阿里云","aws":"亚马逊云","minio":"minio"}  |   |  
+| region  | 数据中心所在的地域  | text  |   |   |  
+| object_key_prefix  | 对象存储桶的 Key 的前缀  | text  |   |   |  
+**Example:**
+```
+{
+	"bid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"tid": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+	"data": {
+		"output": {
+			"bucket": "bucket_name",
+			"credentials": {
+				"access_key_id": "access_key_id",
+				"access_key_secret": "access_key_secret",
+				"expire": 3600,
+				"security_token": "security_token"
+			},
+			"endpoint": "https://oss-cn-hangzhou.aliyuncs.com",
+			"object_key_prefix": "b4cfaae6-bd9d-4cd0-8472-63b608c3c581",
+			"provider": "ali",
+			"region": "hz"
+		},
+		"result": 0
+	},
+	"timestamp:": 1654070968655
+}
+```
