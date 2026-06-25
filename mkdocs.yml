@@ -1,10 +1,10 @@
 site_name: DJI 上云 API 文档
 site_description: DJI Cloud API 文档离线镜像（中文），基于官方最新版本构建，便于 AI 读取与开发者离线查阅。
 site_author: Community
-site_url: https://<your-github-username>.github.io/dji-cloud-api-docs/
+site_url: https://huneng.github.io/dji-cloud-api-docs/
 
 repo_name: dji-cloud-api-docs
-repo_url: https://github.com/<your-github-username>/dji-cloud-api-docs
+repo_url: https://github.com/huneng/dji-cloud-api-docs
 
 # 使用爬取得到的 output/ 目录作为文档源
 docs_dir: output
@@ -57,7 +57,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<your-github-username>/dji-cloud-api-docs
+      link: https://github.com/huneng/dji-cloud-api-docs
   generator: false
 
 copyright: |

@@ -18,10 +18,10 @@
 站点通过 **GitHub Pages** 部署：
 
 ```
-https://<你的 GitHub 用户名>.github.io/dji-cloud-api-docs/
+https://huneng.github.io/dji-cloud-api-docs/
 ```
 
-> 部署完成后，将上述 URL 中的 `<你的 GitHub 用户名>` 替换为你的真实用户名即可访问。
+> 部署完成后，将上述 URL 中的 `huneng` 替换为你的真实用户名即可访问。
 
 ---
 
@@ -50,7 +50,7 @@ https://<你的 GitHub 用户名>.github.io/dji-cloud-api-docs/
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/<你的 GitHub 用户名>/dji-cloud-api-docs.git
+git clone https://github.com/huneng/dji-cloud-api-docs.git
 cd dji-cloud-api-docs
 ```
 
@@ -128,7 +128,7 @@ output/feature-set/dock-feature-set/dock-livestream.md
 部署后的 GitHub Pages 每个页面都是完整的静态 HTML，内容在 HTML 源码中，不像官方 VuePress 那样返回空壳。AI 可以直接用 curl 或爬虫抓取：
 
 ```bash
-curl -s https://<你的用户名>.github.io/dji-cloud-api-docs/api-reference/dock-to-cloud/mqtt/dock/dock3/wayline/
+curl -s https://huneng.github.io/dji-cloud-api-docs/api-reference/dock-to-cloud/mqtt/dock/dock3/wayline/
 ```
 
 ---
