@@ -20,7 +20,53 @@ WHIP [（WebRTC-HTTP Ingestion Protocol）open in new window](https://millicast.
 如上图所示，无人机飞行平台并不直接连接第三方云平台，中间是通过DJI Pilot 2或大疆机场进行转流转发，遥控器和机场与无人机之间的通信还是用DJI私有图传ocusync链路。
 第三方云平台需要预先部署MQTT网关以及流媒体服务器，DJI推流协议支持 Agora/RTMP/GB28181 等模式，其中MQTT网关主要用来做消息通信，配置信息设置和读取。
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-livestream.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE) 交互时序图
-DJI DockCloud ServerWeb PageWeb端点击直播直播能力更新 Topic: thing/product/{device_sn}/state设备推送 state topic，云端解析直播能力结构体（live_capacity）开始直播 Topic: thing/product/{gateway_sn}/servicesMethod: live_start_push设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_start_push机场向服务器推流拉流设置直播清晰度 Topic: thing/product/{gateway_sn}/servicesMethod: live_set_quality设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_set_quality清晰度调整设置直播镜头 Topic: thing/product/{gateway_sn}/servicesMethod: live_lens_change设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_lens_change镜头切换停止直播 Topic: thing/product/{gateway_sn}/servicesMethod: live_stop_push设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_stop_pushDJI DockCloud ServerWeb Page
+
+> 原页面此处为交互时序图，以下为从页面提取的图注文字。
+
+```text
+DJI Dock
+Cloud Server
+Web PageWeb端点击直播直播能力更新
+Topic: thing/product/{device_sn}/state
+设备推送 state topic，
+云端解析直播能力结构体（live_capacity）
+开始直播
+Topic: thing/product/{gateway_sn}/services
+Method: live_start_push
+设备
+响应
+Topic: thing/product/{gateway_sn}/services_reply
+Method: live_start_push
+机场向服务器
+推流
+拉流
+设置直播清晰度
+Topic: thing/product/{gateway_sn}/services
+Method: live_set_quality
+设备
+响应
+Topic: thing/product/{gateway_sn}/services_reply
+Method: live_set_quality清晰度调整
+设置直播镜头
+Topic: thing/product/{gateway_sn}/services
+Method: live_lens_change
+设备
+响应
+Topic: thing/product/{gateway_sn}/services_reply
+Method: live_lens_change镜头
+切换
+停止直播
+Topic: thing/product/{gateway_sn}/services
+Method: live_stop_push
+设备
+响应
+Topic: thing/product/{gateway_sn}/services_reply
+Method: live_stop_push
+DJI Dock
+Cloud Server
+Web Page
+```
+
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-livestream.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0) 接口详细实现
 [直播功能（MQTT）open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html)
   * 直播能力更新  

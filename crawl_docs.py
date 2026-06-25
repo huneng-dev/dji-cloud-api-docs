@@ -164,40 +164,58 @@ def url_to_path(url: str) -> Path:
     return OUTPUT_DIR / path
 
 
+def format_diagram_text(text: str) -> str:
+    lines = []
+    lines.append("")
+    lines.append("> 原页面此处为交互时序图，以下为从页面提取的图注文字。")
+    lines.append("")
+    lines.append("```text")
+    segments = re.split(r"(?=Topic:|Method:|DJI |Cloud |Web |设备|机场|云端|拉流|推流|停止|开始|设置|切换|响应)", text)
+    for seg in segments:
+        seg = seg.strip()
+        if seg:
+            lines.append(seg)
+    lines.append("```")
+    lines.append("")
+    return "\n".join(lines)
+
+
 def clean_markdown(md: str, url: str) -> str:
     """清理提取的 Markdown 内容"""
     lines = md.split("\n")
     cleaned = []
 
-    # 获取页面相对路径作为标题
     rel_path = urlparse(url).path.replace("/doc/cloud-api-tutorial/cn/", "").strip("/")
     if rel_path.endswith(".html"):
         rel_path = rel_path[:-5]
 
-    # 用 HTML 注释保留元数据，避免渲染到页面
     cleaned.append(f"<!-- source: {url} -->")
     cleaned.append(f"<!-- path: {rel_path} -->")
     cleaned.append("")
 
-    skip_nav = False
-    for line in lines:
-        # 跳过导航/侧边栏重复内容（首页已经包含了完整的导航）
+    i = 0
+    while i < len(lines):
+        line = lines[i]
         stripped = line.strip()
 
-        # 跳过空的导航链接行和冗余的搜索框
         if stripped in ("搜索`K`", "[ v1.15 ](https://developer.dji.com/doc/cloud-api-tutorial/cn/)",
                          "LanguagesLanguages", "[ English ]", "[ 中文 ]"):
+            i += 1
             continue
 
-        # 跳过首页顶部 logo 和导航（重复出现）
         if stripped.startswith("[![上云API]") or stripped.startswith("[上云API]("):
+            i += 1
             continue
 
-        # 确保主要内容
+        if stripped and i > 0 and "交互时序图" in lines[i - 1] and "Topic:" in stripped and "Method:" in stripped:
+            cleaned.append(format_diagram_text(stripped))
+            i += 1
+            continue
+
         if stripped:
             cleaned.append(line)
+        i += 1
 
-    # 移除开头的空行
     while cleaned and cleaned[0] == "":
         cleaned.pop(0)
 
@@ -361,8 +379,46 @@ async def crawl_page(crawler: AsyncWebCrawler, url: str, sem: asyncio.Semaphore)
             return url, None
 
 
+def write_extra_css() -> None:
+    css_dir = OUTPUT_DIR / "stylesheets"
+    css_dir.mkdir(parents=True, exist_ok=True)
+    css_file = css_dir / "extra.css"
+    css = """/* 宽表格横向滚动，防止挤爆布局 */
+.md-typeset__table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.md-typeset table {
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  table-layout: auto;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  min-width: 120px;
+  max-width: 600px;
+  word-break: break-word;
+  white-space: normal;
+  vertical-align: top;
+}
+
+/* 时序图提取文本自动换行 */
+.md-typeset .highlight.language-text pre,
+.md-typeset .language-text pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+"""
+    css_file.write_text(css, encoding="utf-8")
+
+
 async def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    write_extra_css()
 
     sem = asyncio.Semaphore(MAX_CONCURRENT)
 

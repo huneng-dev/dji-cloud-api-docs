@@ -7,6 +7,30 @@
   1. 自定义作业区：在自定义作业区内，飞行器可以起飞并进行作业，但无法飞出该区域。
   2. 自定义限飞区：在自定义限飞区外，飞行器可以进行作业，但无法飞入该区域。
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/custom-flight-area.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE) 交互时序图
-Cloud ServerDJI DockAircraftWeb Pagealt[文件版本判断一致][文件版本判断不一致（不一致则以云端的版本为准）]打包自定义飞行区文件，上传到存储桶通知自定义飞行区文件更新 Topic: thing/product/{gateway_sn}/services Method: flight_areas_update拉取自定义飞行区文件信息 Topic: thing/product/{gateway_sn}/requests Method: flight_areas_get返回云端最新的自定义飞行区信息开启飞行器，请求升级自定义飞行区数据，携带文件下载地址和文件MD5返回飞行器自身自定义飞行区的文件信息自定义飞行区文件版本判断上报同步完成 Topic: thing/product/{gateway_sn}/events Method: flight_areas_sync_progress返回已经完成同步状态上报同步进行中，进入数据同步升级从存储桶下载最新文件，上传自定义飞行区数据发送自定义飞行区同步进度状态上报自定义飞行区同步进度状态 Topic: thing/product/{gateway_sn}/events Method: flight_areas_sync_progress本地状态持久化处理推送自定义飞行区最新同步进度状态飞行器向机场推送飞行区信息飞行区告警信息推送 Topic: thing/product/{gateway_sn}/events Method: flight_areas_drone_location上报飞行器和各个区域的告警信息Cloud ServerDJI DockAircraftWeb Page
+
+> 原页面此处为交互时序图，以下为从页面提取的图注文字。
+
+```text
+Cloud Server
+DJI DockAircraft
+Web Pagealt[文件版本判断一致][文件版本判断不一致（不一致则以
+云端的版本为准）]打包自定义飞行区文件，上传到存储桶通知自定义飞行区文件更新
+Topic: thing/product/{gateway_sn}/services
+Method: flight_areas_update拉取自定义飞行区文件信息
+Topic: thing/product/{gateway_sn}/requests
+Method: flight_areas_get返回
+云端最新的自定义飞行区信息开启飞行器，请求升级自定义飞行区数据，携带文件下载地址和文件MD5返回飞行器自身自定义飞行区的文件信息自定义飞行区文件版本判断上报同步完成
+Topic: thing/product/{gateway_sn}/events
+Method: flight_areas_sync_progress返回已经完成同步状态上报同步进行中，进入数据同步升级从存储桶下载最新文件，上传自定义飞行区数据发送自定义飞行区同步进度状态上报自定义飞行区同步进度状态
+Topic: thing/product/{gateway_sn}/events
+Method: flight_areas_sync_progress本地状态持久化处理推送自定义飞行区最新同步进度状态飞行器向
+机场推送飞行区信息飞行区告警信息推送
+Topic: thing/product/{gateway_sn}/events
+Method: flight_areas_drone_location上报飞行器和各个区域的告警信息
+Cloud Server
+DJI DockAircraft
+Web Page
+```
+
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/custom-flight-area.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0) 接口详细实现
 [自定义飞行区open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock2/custom-flight-area.html)

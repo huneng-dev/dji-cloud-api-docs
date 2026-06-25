@@ -45,10 +45,13 @@ plugins:
     - zh
     - en
     separator: '[\s\u200b\-、。，.?!;:"()]+'
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
-  - icon: fontawesome/brands/github
-    link: https://github.com/huneng-dev/dji-cloud-api-docs
+    - icon: fontawesome/brands/github
+      link: https://github.com/huneng-dev/dji-cloud-api-docs
   generator: false
 copyright: '本站点为 DJI 上云 API 官方文档的社区镜像，仅供学习与交流使用。<br>
 

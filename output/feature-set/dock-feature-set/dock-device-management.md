@@ -4,7 +4,48 @@
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-device-management.html#%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0) 功能概述
 设备管理功能支持设备向云端上报拓扑信息、推送设备属性、以及云端对设备的属性进行设置。让用户可以在云端查看以及调整设备状态，更为方便地展开工作。
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-device-management.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE) 交互时序图
-AircraftDJI DockCloud Server设备上线loop[osd属性 0.5HZ 定频推送]opt[state属性 事件性上报]设备下线设备与网关通信连接，设备上线设备拓扑更新 Topic: sys/product/{gateway_sn}/statusMethod: update_topo飞行器属性推送设备（飞行器）属性推送 Topic: thing/product/{device_sn}/osd设备（机场）属性推送 Topic: thing/product/{device_sn}/osd飞行器属性推送设备（飞行器）属性推送 Topic: thing/product/{device_sn}/state设备（机场）属性推送 Topic: thing/product/{device_sn}/state设备属性设置 Topic: thing/product/{gateway_sn}/property/set变更命令下发设备属性变更飞行器响应设备端响应 Topic: thing/product/{gateway_sn}/property/set_reply设备与网关设备通信断开，设备下线设备拓扑更新 Topic: sys/product/{gateway_sn}/statusMethod: update_topoAircraftDJI DockCloud Server
+
+> 原页面此处为交互时序图，以下为从页面提取的图注文字。
+
+```text
+Aircraft
+DJI Dock
+Cloud Server
+设备上线loop[osd属性 0.5HZ 定频推送]opt[state属性 事件性上报]
+设备下线
+设备与网关通信连接，
+设备上线
+设备拓扑更新
+Topic: sys/product/{gateway_sn}/status
+Method: update_topo飞行器属性推送
+设备（飞行器）属性推送
+Topic: thing/product/{device_sn}/osd
+设备（
+机场）属性推送
+Topic: thing/product/{device_sn}/osd飞行器属性推送
+设备（飞行器）属性推送
+Topic: thing/product/{device_sn}/state
+设备（
+机场）属性推送
+Topic: thing/product/{device_sn}/state
+设备属性
+设置
+Topic: thing/product/{gateway_sn}/property/set变更命令下发
+设备属性变更飞行器
+响应
+设备端
+响应
+Topic: thing/product/{gateway_sn}/property/set_reply
+设备与网关
+设备通信断开，
+设备下线
+设备拓扑更新
+Topic: sys/product/{gateway_sn}/status
+Method: update_topoAircraft
+DJI Dock
+Cloud Server
+```
+
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-device-management.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0) 接口详细实现
   * [飞行器设备属性open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/aircraft/properties.html)
   * [机场设备属性open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/properties.html)

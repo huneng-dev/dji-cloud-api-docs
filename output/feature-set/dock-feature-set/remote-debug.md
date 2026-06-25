@@ -32,7 +32,26 @@
 执行流程如下：
 ![](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/cloudapi/V1.2.0/__________.png)
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-debug.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE) 交互时序图
-DJI DockCloud Server下发命令（cmd）Topic: thing/product/{gateway_sn}/servicesMethod:{cmd_method}回复是否开始执行Topic: thing/product/{gateway_sn}/services_reply下发任务（job）Topic: thing/product/{gateway_sn}/servicesMethod:{cmd_method}回复是否开始执行Topic: thing/product/{gateway_sn}/services_reply上报任务进度Topic: thing/product/{gateway_sn}/eventsMethod:{cmd_method}DJI DockCloud Server
+
+> 原页面此处为交互时序图，以下为从页面提取的图注文字。
+
+```text
+DJI Dock
+Cloud Server下发命令（cmd）
+Topic: thing/product/{gateway_sn}/services
+Method:{cmd_method}回复是否
+开始执行
+Topic: thing/product/{gateway_sn}/services_reply下发任务（job）
+Topic: thing/product/{gateway_sn}/services
+Method:{cmd_method}回复是否
+开始执行
+Topic: thing/product/{gateway_sn}/services_reply上报任务进度
+Topic: thing/product/{gateway_sn}/events
+Method:{cmd_method}
+DJI Dock
+Cloud Server
+```
+
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-debug.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0) 接口详细实现
 [远程调试open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/cmd.html)
   * 命令进度

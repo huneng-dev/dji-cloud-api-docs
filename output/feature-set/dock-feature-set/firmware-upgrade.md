@@ -9,7 +9,30 @@
 >   * 升级的优先级顺序：普通升级 **高于** 一致性升级。普通升级能够覆盖一致性升级。因为如果设备的版本与固件最新版本一致为1.x，但是电池模块的固件偏低，所以设备端将会报需要一致性升级的物模型。但是如果固件最新版本为2.x，与设备的版本不一致，顺带会把版本偏低的电池模块升级，最终固件不一致的问题会被解决。
 > 
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/firmware-upgrade.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE) 交互时序图
-DJI DockCloud Serverloop[设备上传进度与云端响应]上报设备固件属性创建固件升级任务Topic: thing/product/{gateway_sn}/servicesMethod: ota_create设备响应Topic: thing/product/{gateway_sn}/services_reply上报升级任务进度与状态Topic: thing/product/{gateway_sn}/eventsMethod: ota_progress云端响应Topic: thing/product/{gateway_sn}/events_replyDJI DockCloud Server
+
+> 原页面此处为交互时序图，以下为从页面提取的图注文字。
+
+```text
+DJI Dock
+Cloud Serverloop[
+设备上传进度与
+云端
+响应]上报
+设备固件属性创建固件升级任务
+Topic: thing/product/{gateway_sn}/services
+Method: ota_create
+设备
+响应
+Topic: thing/product/{gateway_sn}/services_reply上报升级任务进度与状态
+Topic: thing/product/{gateway_sn}/events
+Method: ota_progress
+云端
+响应
+Topic: thing/product/{gateway_sn}/events_reply
+DJI Dock
+Cloud Server
+```
+
 ##  [#](https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/firmware-upgrade.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0) 接口详细实现
   * [机场物模型属性open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/properties.html)
   * [固件升级open in new window](https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/firmware.html)
