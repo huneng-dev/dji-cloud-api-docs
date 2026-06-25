@@ -35,11 +35,12 @@ theme:
   features:
     - navigation.instant          # 页面即时加载
     - navigation.tracking         # URL 跟随滚动
-    - navigation.tabs             # 顶部 Tab 导航
-    - navigation.tabs.sticky
     - navigation.sections         # 章节展开
     - navigation.expand           # 默认展开侧边栏
     - navigation.indexes          # 章节索引页
+    - navigation.path             # 面包屑导航
+    - toc.follow                  # 右侧目录跟随滚动
+    - toc.integrate               # 小屏时目录并入侧边栏
     - search.suggest              # 搜索建议
     - search.highlight            # 搜索结果高亮
     - search.share                # 分享搜索结果
