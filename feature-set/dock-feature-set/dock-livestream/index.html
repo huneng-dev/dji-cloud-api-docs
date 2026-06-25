@@ -55,6 +55,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -5816,6 +5818,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # 接口详细实现
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7248,56 +7261,64 @@
 <td>##  <a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-livestream.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE">#</a> 交互时序图</td>
 <td></td>
 </tr>
-<tr>
-<td>DJI DockCloud ServerWeb PageWeb端点击直播直播能力更新 Topic: thing/product/{device_sn}/state设备推送 state topic，云端解析直播能力结构体（live_capacity）开始直播 Topic: thing/product/{gateway_sn}/servicesMethod: live_start_push设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_start_push机场向服务器推流拉流设置直播清晰度 Topic: thing/product/{gateway_sn}/servicesMethod: live_set_quality设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_set_quality清晰度调整设置直播镜头 Topic: thing/product/{gateway_sn}/servicesMethod: live_lens_change设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_lens_change镜头切换停止直播 Topic: thing/product/{gateway_sn}/servicesMethod: live_stop_push设备响应 Topic: thing/product/{gateway_sn}/services_replyMethod: live_stop_pushDJI DockCloud ServerWeb Page</td>
-<td></td>
-</tr>
-<tr>
-<td>##  <a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-livestream.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0">#</a> 接口详细实现</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html">直播功能（MQTT）open in new window</a></td>
-<td></td>
-</tr>
-<tr>
-<td>* 直播能力更新</td>
-<td></td>
-</tr>
-<tr>
-<td>live_capacity（直播能力）字段是放在网关设备的物模型中的，同时只有当设备端有状态变化时推送。直播能力字段包含可用于直播的视频流总数、可同时进行直播的视频流总数、设备直播能力列表等信息。</td>
-<td></td>
-</tr>
-<tr>
-<td>* 开始直播</td>
-<td></td>
-</tr>
-<tr>
-<td>服务端下发<code>开始直播</code>指令，指令中指定使用的协议类型、直播质量等信息。直播视频流推流、拉流。</td>
-<td></td>
-</tr>
-<tr>
-<td>* 停止直播</td>
-<td></td>
-</tr>
-<tr>
-<td>* 设置直播清晰度</td>
-<td></td>
-</tr>
-<tr>
-<td>直播质量可设置，枚举值可在API章节查看。</td>
-<td></td>
-</tr>
-<tr>
-<td>* 设置直播镜头</td>
-<td></td>
-</tr>
-<tr>
-<td>直播功能可以在不影响直播进程的情况下，切换镜头。直播视频流的镜头类型枚举值，可在API章节自行查看。</td>
-<td></td>
-</tr>
 </tbody>
 </table>
+<blockquote>
+<p>原页面此处为交互时序图，以下为从页面提取的图注文字。</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>DJI Dock
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Cloud Server
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Web PageWeb端点击直播直播能力更新
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Topic: thing/product/{device_sn}/state
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>设备推送 state topic，
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>云端解析直播能力结构体（live_capacity）
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>开始直播
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Method: live_start_push
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>设备
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>响应
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Topic: thing/product/{gateway_sn}/services_reply
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Method: live_start_push
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>机场向服务器
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>推流
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>拉流
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>设置直播清晰度
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>Method: live_set_quality
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>设备
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>响应
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>Topic: thing/product/{gateway_sn}/services_reply
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>Method: live_set_quality清晰度调整
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>设置直播镜头
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>Method: live_lens_change
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>设备
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>响应
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>Topic: thing/product/{gateway_sn}/services_reply
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>Method: live_lens_change镜头
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>切换
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>停止直播
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>Method: live_stop_push
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>设备
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>响应
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>Topic: thing/product/{gateway_sn}/services_reply
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>Method: live_stop_push
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>DJI Dock
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>Cloud Server
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>Web Page
+</span></code></pre></div>
+<h2 id="_3"><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/dock-livestream.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E5%AE%9E%E7%8E%B0">#</a> 接口详细实现<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/live.html">直播功能（MQTT）open in new window</a>
+  * 直播能力更新<br />
+live_capacity（直播能力）字段是放在网关设备的物模型中的，同时只有当设备端有状态变化时推送。直播能力字段包含可用于直播的视频流总数、可同时进行直播的视频流总数、设备直播能力列表等信息。
+  * 开始直播<br />
+服务端下发<code>开始直播</code>指令，指令中指定使用的协议类型、直播质量等信息。直播视频流推流、拉流。
+  * 停止直播
+  * 设置直播清晰度<br />
+直播质量可设置，枚举值可在API章节查看。
+  * 设置直播镜头<br />
+直播功能可以在不影响直播进程的情况下，切换镜头。直播视频流的镜头类型枚举值，可在API章节自行查看。</p>
 
 
 

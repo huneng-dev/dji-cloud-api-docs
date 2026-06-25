@@ -1,0 +1,29 @@
+/* 宽表格横向滚动，防止挤爆布局 */
+.md-typeset__table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.md-typeset table {
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  table-layout: auto;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  min-width: 120px;
+  max-width: 600px;
+  word-break: break-word;
+  white-space: normal;
+  vertical-align: top;
+}
+
+/* 时序图提取文本自动换行 */
+.md-typeset .highlight.language-text pre,
+.md-typeset .language-text pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

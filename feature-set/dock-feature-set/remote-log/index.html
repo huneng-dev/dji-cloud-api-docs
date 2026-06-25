@@ -55,6 +55,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -7193,7 +7195,28 @@
 <p><strong>注意：</strong> 当前日志上传启动后，暂时不支持上传任务暂停、暂停后恢复、上传任务拒绝。</p>
 </blockquote>
 <h2 id="_2"><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-log.html#%E4%BA%A4%E4%BA%92%E6%97%B6%E5%BA%8F%E5%9B%BE">#</a> 交互时序图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>DJI DockCloud ServerObject Storage获取指定设备的日志文件列表Topic: thing/product/{gateway_sn}/servicesMethod:fileupload_list设备返回日志文件列表Topic: thing/product/{gateway_sn}/services_reply启动日志文件上传任务Topic: thing/product/{gateway_sn}/servicesMethod:fileupload_start设备响应Topic: thing/product/{gateway_sn}/services_reply取消日志文件上传(可选)Topic: thing/product/{gateway_sn}/servicesMethod:fileupload_update日志文件上传日志文件上传进度上报Topic: thing/product/{gateway_sn}/eventsMethod:fileupload_progressDJI DockCloud ServerObject Storage</p>
+<blockquote>
+<p>原页面此处为交互时序图，以下为从页面提取的图注文字。</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>DJI Dock
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Cloud ServerObject Storage获取指定
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>设备的日志文件列表
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Method:fileupload_list
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>设备返回日志文件列表
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Topic: thing/product/{gateway_sn}/services_reply启动日志文件上传任务
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Method:fileupload_start
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>设备
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>响应
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Topic: thing/product/{gateway_sn}/services_reply取消日志文件上传(可选)
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Topic: thing/product/{gateway_sn}/services
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Method:fileupload_update日志文件上传日志文件上传进度上报
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>Topic: thing/product/{gateway_sn}/events
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>Method:fileupload_progress
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>DJI Dock
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Cloud ServerObject Storage
+</span></code></pre></div>
 <h2 id="_3"><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/remote-log.html#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E">#</a> 接口详细说明<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><a href="https://developer.dji.com/doc/cloud-api-tutorial/cn/api-reference/dock-to-cloud/mqtt/dock/dock1/log.html">远程日志open in new window</a>
   * 获取设备可上传的文件列表
